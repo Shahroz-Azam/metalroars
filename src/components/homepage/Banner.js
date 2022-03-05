@@ -1,18 +1,15 @@
 import React from "react";
 // import Carousel from 'react-bootstrap/Carousel';
 import Poster from '../../assets/images/poster.jpg'
-import HeaderVideo from '../../assets/images/header-2.mp4'
+import HeaderVideo from '../../assets/images/banner/metalroarsNFTvideo.mp4'
 // import Image from 'react-bootstrap/Image'
 export default function Banner({ history }) {
     return(
         <>
-            <div className="banner-video">
+            <div className="bannerContainer">
                 <video
-                    id="header-video"
-                    className="d-block w-100 banner-image"
+                    className="bannerVideo"
                     src={HeaderVideo}
-                    // width="1000"
-                    height="1000"
                     controls={false}
                     autoPlay={true}
                     playsInline={true}

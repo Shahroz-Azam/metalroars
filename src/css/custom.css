@@ -38,6 +38,10 @@ body{
     color: #ffffff;
 }
 
+.padding-zero{
+    padding: 0;
+}
+
 .navbar{
     padding: 0;
 }
@@ -72,9 +76,14 @@ a:hover{
 }
 
 .nav-logo{
+    width: 200px;
     position: absolute;
     top: 0%;
     left: 25%;
+}
+
+.navbar>.nav-logo{
+    display: none;
 }
 
 .nav-line{
@@ -89,13 +98,11 @@ a:hover{
     line-height: 14px;
     margin: 15px 0 5px;
     border-bottom: 2px solid transparent;
-    /* transform: skewX(25deg); */
 }
 
 .navbar-dark .navbar-nav .nav-link:hover{
     color: #fff;
     border-bottom: 2px solid #ff4600;
-    /* border-color: transparent transparent #ff4600 transparent; */
 }
 .upperNav *{
     padding: 0;
@@ -116,39 +123,46 @@ a:hover{
     justify-content: space-between;
 }
 
-.home-link{
-    /*border-bottom: 3px solid #FF4600;*/
+.navbar-dark .navbar-toggler{
+    outline: none;
+    box-shadow: none;
+    border: unset;
+    color: unset;
+    padding: 10px 15px;
 }
-/*.nav-link:first-child:hover{*/
-/*    border-bottom: 0px;*/
-/*}*/
-/*.nav-link:not(:first-child):hover{*/
-/*    border-bottom: 2px solid #FF4600;*/
-/*}*/
 
-.banner-video{
-    /*position: relative;*/
-    /*height: 100vh;*/
-    /*!*width: 100vw;*!*/
-    /*overflow: hidden;*/
+.navbar-dark .navbar-toggler-icon{
+    outline: none;
+    background-image: url(../assets/images/nav/edited2.svg);
 }
-.banner-image{
-    max-height: 900px;
-    object-fit: cover;
-    max-width: 100%;
-    /*height: auto;*/
-    /*z-index: 2;*/
-    /*position: absolute;*/
-    /*width: auto;*/
-    /*height: auto;*/
-    /*min-width: 100%;*/
-    /*min-height: 100%;*/
-    /*top: 50%;*/
-    /*left: 50%;*/
-    /*transform: translate(-50%,-50%);*/
 
+@media screen and (max-width: 992px) {
+    .upperNav, .nav-line{
+        display: none;
+    }
 
+    .navbar>.nav-logo{
+        display: inline-block;
+        width: 100px;
+        position: unset;
+    }
+
+    .navbar-dark .navbar-nav .nav-link{
+        border-bottom: unset;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover{
+        border-bottom: unset;
+    }
+
+    .upperNav, .lowerNav{
+        text-align: center;
+    }
 }
+.bannerContainer .bannerVideo{
+    width: 100%;
+}
+
 /*slider css*/
 .carousel-item img{
     height: auto;

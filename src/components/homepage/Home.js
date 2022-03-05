@@ -35,7 +35,7 @@ export default function HomePage({ history }) {
                 <Container className="" fluid>
                     <Header />
                 </Container>
-                <Container className="" fluid={true}>
+                <Container className="padding-zero" fluid={true}>
                     <Banner />
                 </Container>
                 <Container fluid={true}>
