@@ -9,23 +9,16 @@ export default function FreePlay({ history }) {
     return(
         <>
             <Container>
-                <Row className="free_play_row">
-                    <Col className="" lg={{ span: 6, offset: 0 }} md={{ span: 6, offset: 0 }} xs={{span: 12, offset: 0}}>
-                        <Image src={FreeToPlay} alt='KissFrosting' fluid={true} loading="lazy" />
-                    </Col>
-                    <Col className="mt-lg-5 pt-lg-5" lg={{ span: 6, offset: 0 }} md={{ span: 6, offset: 0 }} xs={{span: 12, offset: 0}}>
-                        <h1 className="free_play_heading">
-                            {`FREE-TO-PLAY `}
-                        </h1>
-                        <h1 className="free_play_heading">
-                            {`PLAY-TO-EARN`}
-                        </h1>
-                        <p className="free_play_text">Our aim is to everyone to start playing the METAL ROARS game without having to pay a
-                            large amount of money to acquire NFTs at the beginning. We give all users the ability
-                            to claim and use a simple & generic NFT Monster Truck with the same basic stats, although
-                            NFT cars that are more unique or in special collections will have more advantages than the free,
-                            generic NFT Monster Truck.</p>
-                    </Col>
+                <Row className="sectionRow freeToPlayRow">
+                <Col lg={6}>
+                    <Image className="sectionImage freeToPlayImg" loading="lazy" src={FreeToPlay} alt="free to play image" fluid={true} />
+                </Col>
+                <Col lg={6}>
+                    <h1 className="sectionHeading freeToPlayHeading">Free-to-Play <br></br>Play-to-Earn</h1>
+                    <p className="sectionText freeToPlayText">Metal Roads is a Free-to-play and Play-to-earn blockchain-based action game consisting of stunts, racing and battle modes. In the games players can use NFT Trucks & equipment and go to war, race & stunts with other players in an ever-expanding gaming world where the possibilities are limitless.
+Metal Roars allow users to collect and make in-game purchases of exciting items such as trucks, weapons and upgrades. The game allows users to use their collectibles and head into battle with their opponents. Furthermore, our game has multiple modes that include Battle and Racing allowing users to earn rewards while playing the game.</p>
+                    <Image className="sectionImage freeToPlayImg2" loading="lazy" src={FreeToPlay} alt="free to play image" fluid={true} />
+                </Col>
                 </Row>
             </Container>
 

@@ -41,7 +41,7 @@ export default function HomePage({ history }) {
                 <Container className="gamePlayContainer" fluid={true}>
                     <GamePlay/>
                 </Container>
-                <Container fluid={true} className="freeplay_container">
+                <Container fluid={true} className="freeToPlayContainer">
                     <FreePlay/>
                 </Container>
                 <Container fluid={true}>
