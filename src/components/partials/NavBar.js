@@ -17,6 +17,7 @@ export default function NavBar({ history }) {
 		<>
 
 			<Navbar expand="lg" variant="dark">
+			<Image className="nav-logo" loading="lazy" src={Logo} alt="metal roar logo" fluid={true} />
 				<Navbar.Toggle aria-controls="navbarScroll" />
 				<Navbar.Collapse id="navbarScroll">
 					<Container fluid>
