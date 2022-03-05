@@ -38,7 +38,7 @@ export default function HomePage({ history }) {
                 <Container className="padding-zero" fluid={true}>
                     <Banner />
                 </Container>
-                <Container fluid={true}>
+                <Container className="gamePlayContainer" fluid={true}>
                     <GamePlay/>
                 </Container>
                 <Container fluid={true} className="freeplay_container">

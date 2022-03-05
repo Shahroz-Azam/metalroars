@@ -1,21 +1,23 @@
 import React from "react";
 // import Carousel from 'react-bootstrap/Carousel';
-// import GamePlay from '../../assets/images/game_play.png'
-// import Image from 'react-bootstrap/Image'
+import GamePlayImage from '../../assets/images/game-play-2.webp'
+import Image from 'react-bootstrap/Image'
+import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 export default function GamePlay({ history }) {
     return(
         <>
-            <Row className="game_play_row">
-                <Col lg={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }} xs={{span: 12, offset: 0}}>
-                    <Row className="game_play_heading_row mt-lg-5 pt-lg-5 text-center">
-                        <Col lg={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }} xs={{span: 12, offset: 0}}>
-                            <h1 className="game_play_heading">Game Play</h1>
-                        </Col>
-                    </Row>
+        <Container>
+            <Row className="gamePlayRow">
+                <Col lg={12}>
+                    <h1 className="gamePlayHeading">Game Play</h1>
+                    <p className="gamePlayText">Metal Roads is a Free-to-play and Play-to-earn blockchain-based action game consisting of stunts, racing and battle modes. In the games players can use NFT Trucks & equipment and go to war, race & stunts with other players in an ever-expanding gaming world where the possibilities are limitless.</p>
+                    <Image className="gamePlayImg" loading="lazy" src={GamePlayImage} alt="game play image" fluid={true} />
                 </Col>
             </Row>
+        </Container>
+            
         </>
     )
 
