@@ -177,6 +177,44 @@ a:hover{
     display: none;
 }
 
+/*generic section css*/
+
+.sectionHeading{
+    font-family: Grind_Demolished;
+    color: #FF4600;
+    font-size: 40px;
+    line-height: 45px;
+    transition: color ease 0.2s, font-size ease 0.4s;
+}
+
+.sectionHeading:hover{
+    color: #fff;
+    font-size: 42px;
+}
+
+.sectionText{
+    font-family: Square721-BT-Roman;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .sectionHeading{
+        margin: 30px 0 25px;
+        font-size: 30px;
+    }
+    
+    .sectionHeading:hover{
+        color: #fff;
+        font-size: 32px;
+    }
+
+    .sectionText{
+    font-size: 14px;
+    }
+}
+
 /*game play section css*/
 .gamePlayContainer{
     background-image: linear-gradient(#02060b, #02060b, #000);
@@ -188,30 +226,21 @@ a:hover{
 
 .gamePlayHeading{
     margin: 80px 0 45px;
-    font-family: Grind_Demolished;
-    color: #FF4600;
-    font-size: 40px;
-    line-height: 45px;
 }
 
 .gamePlayText{
-    font-family: Square721-BT-Roman;
-    font-size: 18px;
-    line-height: 22px;
     margin-bottom: 60px;
 }
 
 @media screen and (max-width: 992px) {
     .gamePlayHeading{
         margin: 30px 0 25px;
-        font-size: 40px;
     }
-    .gamePlayHeading{
-        font-size: 30px;
-    }
+
     .gamePlayText{
-    font-size: 14px;
+        margin-bottom: 25px;
     }
+    
 }
 
 .game_play_heading,.road_map_heading,.our_team_heading,.advisor_heading,.nft_collection_heading,.news_feed_heading,.faq_heading{
@@ -220,7 +249,6 @@ a:hover{
     font-size: 55px;
     font-weight: normal;
     text-transform: uppercase;
-
 }
 .game_play_heading:hover,.road_map_heading:hover,.our_team_heading:hover,
 .nft_collection_heading:hover,.news_feed_heading:hover,.faq_heading:hover,
