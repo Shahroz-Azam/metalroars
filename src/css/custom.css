@@ -33,7 +33,7 @@ html{
 
 body{
     font-family: ApexMk2-Regular !important;
-    font-weight: 400 !important;
+    /* font-weight: 400 !important; */
     background-color:#000;
     color: #ffffff;
 }
@@ -50,6 +50,33 @@ a:hover{
     padding: 0;
     margin: 0;
 }
+
+.followContainer{
+    font-family: Square721-BT-Roman;
+    font-size: 14px;
+    margin: 25px 10px 13px 0;
+    line-height: 17px;
+}
+
+.followContainer .navIcons{
+    width: 16px;
+    margin: 0 4px;
+}
+
+.imageContainer{
+    position: relative;
+}
+
+.nav-logo{
+    position: absolute;
+    top: 0%;
+    left: 25%;
+}
+
+.nav-line{
+    border-bottom: 1px solid #1d1d1d;
+}
+
 .topbar-follow-us p, a{
     display: inline;
 }

@@ -32,7 +32,7 @@ export default function HomePage({ history }) {
     return(
         <>
             <Suspense fallback={<Spinner />}>
-                <Container className="d-flex justify-content-center header-div" fluid={true}>
+                <Container className="" fluid>
                     <Header />
                 </Container>
                 <Container className="" fluid={true}>
