@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import App from './App';
 // import './css/App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './css/custom.css'
 import './css/responsiveness.css'
 import reportWebVitals from './reportWebVitals';
+import './css/custom.css'
 
 ReactDOM.render(
   <React.StrictMode>

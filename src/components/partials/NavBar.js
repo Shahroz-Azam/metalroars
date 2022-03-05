@@ -19,46 +19,53 @@ export default function NavBar({ history }) {
 			<Navbar expand="lg" variant="dark">
 				<Navbar.Toggle aria-controls="navbarScroll" />
 				<Navbar.Collapse id="navbarScroll">
-				<Container fluid>
-					<Row>
-						<Col lg={12}>
-							<Container className="upperNav">
-								<Row>
-									<Col lg={4} className="followContainer">
-										<span>Follow Us:</span>
-										<a target="_blank" rel="noreferrer" href="/#"><Image className="navIcons" src={fb} /></a>
-										<a target="_blank" rel="noreferrer" href="https://twitter.com/Metal_Roars"><Image className="navIcons" src={tw} /></a>
-										<a target="_blank" rel="noreferrer" href="/#"><Image className="navIcons" src={ins} /></a>
-										<a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCNHnVkj0RBT32MG7W6Op_9Q"><Image className="navIcons" src={yt} /></a>
-										<a target="_blank" rel="noreferrer" href="/#"><Image className="navIcons" src={em} /></a>
-									</Col>
-									<Col lg={4} className="imageContainer">
-										<Image className="nav-logo" loading="lazy" src={Logo} width="200px" alt="metal roar logo" fluid={true} />
-									</Col>
-									<Col lg={4}></Col>
-								</Row>
-							</Container>
-						</Col>
-					</Row>
-					<Row>
-						<Col lg={12}>
-							<Container fluid>
-								<Row className="nav-line"></Row>
-							</Container>
-						</Col>
-					</Row>
-					<Row>
-						<Col lg={12}>
-							<Container>
-								<Row>
-									<Col lg={4}>1 of 3</Col>
-									<Col lg={4}>2 of 3</Col>
-									<Col lg={4}>3 of 3</Col>
-								</Row>
-							</Container>
-						</Col>
+					<Container fluid>
+						<Row className="upperNav">
+							<Col lg={12}>
+								<Container>
+									<Row>
+										<Col lg={4} className="followContainer">
+											<span>Follow Us:</span>
+											<a target="_blank" rel="noreferrer" href="/#"><Image className="navIcons" src={fb} /></a>
+											<a target="_blank" rel="noreferrer" href="https://twitter.com/Metal_Roars"><Image className="navIcons" src={tw} /></a>
+											<a target="_blank" rel="noreferrer" href="/#"><Image className="navIcons" src={ins} /></a>
+											<a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCNHnVkj0RBT32MG7W6Op_9Q"><Image className="navIcons" src={yt} /></a>
+											<a target="_blank" rel="noreferrer" href="/#"><Image className="navIcons" src={em} /></a>
+										</Col>
+										<Col lg={4} className="imageContainer">
+											<Image className="nav-logo" loading="lazy" src={Logo} width="200px" alt="metal roar logo" fluid={true} />
+										</Col>
+										<Col lg={4}></Col>
+									</Row>
+								</Container>
+							</Col>
+						</Row>
+						<Row className="nav-line">
+						</Row>
+						<Row className="lowerNav">
+							<Col lg={12}>
+								<Container>
+									<Row>
+										<Col lg={4} >
+											<Nav className="navbar-left">
+												<Nav.Link href="#home">Home</Nav.Link>
+												<Nav.Link href="#road-map">GamePlay</Nav.Link>
+												<Nav.Link href="#whitepaper">RoadMap</Nav.Link>
+											</Nav>
+										</Col>
+										<Col lg={4}></Col>
+										<Col lg={4}>
+											<Nav className="navbar-right">
+												<Nav.Link href="#tokonomic">Tokonomic</Nav.Link>
+												<Nav.Link href="#team">Team</Nav.Link>
+												<Nav.Link href="#faqs">FAQS</Nav.Link>
+											</Nav>
+										</Col>
+									</Row>
+								</Container>
+							</Col>
 
-					</Row>
+						</Row>
 					</Container>
 
 					{/* <div id="topbar-follow-us">

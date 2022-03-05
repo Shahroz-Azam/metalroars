@@ -37,6 +37,10 @@ body{
     background-color:#000;
     color: #ffffff;
 }
+
+.navbar{
+    padding: 0;
+}
 a{
     color: #ffffff;
     text-decoration: none;
@@ -54,7 +58,7 @@ a:hover{
 .followContainer{
     font-family: Square721-BT-Roman;
     font-size: 14px;
-    margin: 25px 10px 13px 0;
+    margin: 25px 10px 13px 10px;
     line-height: 17px;
 }
 
@@ -77,21 +81,41 @@ a:hover{
     border-bottom: 1px solid #1d1d1d;
 }
 
-.topbar-follow-us p, a{
-    display: inline;
+.navbar-dark .navbar-nav .nav-link{
+    display: inline-block;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 14px;
+    margin: 15px 0 5px;
+    border-bottom: 2px solid transparent;
+    /* transform: skewX(25deg); */
 }
-.navbar {
-    background-color: #000 !important;
-    color: #ffffff;
-    padding-top: 0px;
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #fff;
+    border-bottom: 2px solid #ff4600;
+    /* border-color: transparent transparent #ff4600 transparent; */
 }
-.navbar-right{
-    margin-top: 3rem;
-    margin-left: 3rem;
+.upperNav *{
+    padding: 0;
 }
+.lowerNav *{
+    padding: 0;
+}
+
 .navbar-left{
-    margin-top: 3rem;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
+
+.navbar-right{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
 .home-link{
     /*border-bottom: 3px solid #FF4600;*/
 }
@@ -102,15 +126,6 @@ a:hover{
 /*    border-bottom: 2px solid #FF4600;*/
 /*}*/
 
-.nav-link{
-    color: #ffffff !important;
-    font-family: ApexMk2-BoldExtended !important;
-    font-weight: bold !important;
-    text-transform: uppercase;
-    font-size: 18px;
-    padding-right: 4rem !important;
-
-}
 .banner-video{
     /*position: relative;*/
     /*height: 100vh;*/
