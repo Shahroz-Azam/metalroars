@@ -26,9 +26,9 @@ export default function RoadMap({ history }) {
                         <h1 className="sectionHeading roadMapHeading">ROADMAP</h1>
                     </Col>
                     <Col lg={12}>
-                        {/* Slider Section */}
+                        <h2> - - Slider Section  - - </h2>
                     </Col>
-                    <Col lg={12}>
+                    <Col lg={12} className="roadMapImgContainer">
                         <Image className="sectionImage roadMapImg" loading="lazy" src={RoadMapSmocky} alt="game play image" fluid={true} />
                     </Col>
                 </Row>

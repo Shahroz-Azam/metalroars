@@ -268,6 +268,29 @@ a:hover{
     }
 }
 
+/*roadmap section css*/
+.roadMapContainer{
+    background-color: #1d1d1d;
+}
+
+.roadMapRow{
+    text-align: center;
+}
+
+.roadMapImgContainer{
+    margin: 60px 0;
+}
+
+.roadMapImg{
+    width: 50%;
+    transition: transform ease 0.2s;
+}
+
+.roadMapImg:hover{
+    transform: translate(-1%, 1%);
+}
+
+
 .game_play_heading,.road_map_heading,.our_team_heading,.advisor_heading,.nft_collection_heading,.news_feed_heading,.faq_heading{
     font-family: Grind_Demolished;
     color: #FF4600;
