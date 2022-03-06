@@ -374,10 +374,23 @@ a:hover{
     margin: 10px 0;
 }
 
+.nfsc-sm{
+    display: none;
+}
+
 @media screen and (max-width: 992px) {
 
     .newsFeedRow{
         padding: 0 0 30px 0;
+    }
+
+    
+    .nfsc-lg{
+        display: none;
+    }
+
+    .nfsc-sm{
+        display: block;
     }
 }
 

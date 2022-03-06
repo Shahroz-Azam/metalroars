@@ -57,7 +57,7 @@ export default function NewsFeed({ history }) {
                     <Col lg={12}>
                         <h1 className="sectionHeading newsFeedHeading">News Feed</h1>
                     </Col>
-                    <Col lg={6}>
+                    <Col lg={6} className="newsFeedSliderContiner nfsc-lg">
                         <h2> - - Slider Images  - - </h2>
                     </Col>
                     <Col lg={6}>
@@ -65,8 +65,12 @@ export default function NewsFeed({ history }) {
                         <p className="sectionText newsFeedText">Metal Roars is a Free-to-play and Play-to-earn blockchain-based action game consisting of stunts, racing and battle modes. In the games players can use NFT Trucks & equipment and go to war, race & stunts with other players in an ever-expanding gaming world where the possibilities are limitless.
                             Metal Roars allow users to collect and make in-game purchases of exciting items such as trucks, weapons and upgrades. The game allows users to use their collectibles and head into battle with their opponents. Furthermore, our game has multiple modes that include Battle and Racing allowing users to earn rewards while playing the game.</p>
                         <a href="/#" className="newsFeedLink">Read More</a>
-                        <h2> - - Slider Images for mobile screen  - - </h2>
 
+                        <Row>
+                            <Col lg="12" className="newsFeedSliderContiner nfsc-sm">
+                                <h2> - - Slider Images for mobile screen  - - </h2>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
             </Container>
