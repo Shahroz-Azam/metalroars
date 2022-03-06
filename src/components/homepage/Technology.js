@@ -14,11 +14,11 @@ export default function Technology() {
                     <Col lg={12}>
                         <h1 className="sectionHeading technologyHeading">TECHNOLOGY</h1>
                     </Col>
-                    <Col lg={6}>
-                        <Image className="binance_image" src={Binance} alt="binance logo" fluid={true} />
+                    <Col lg={6}  xs={6}>
+                        <Image className="techImg binanceImage" src={Binance} alt="binance logo" fluid={true} />
                     </Col>
-                    <Col lg={6}>
-                        <Image className="unity_image" src={Unity} alt="unity logo" fluid={true} />
+                    <Col lg={6} xs={6}>
+                        <Image className="techImg unityImage" src={Unity} alt="unity logo" fluid={true} />
                     </Col>
                 </Row>
             </Container>

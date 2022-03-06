@@ -2,7 +2,7 @@ import React from "react";
 // import Carousel from 'react-bootstrap/Carousel';
 // import Profile from '../../assets/images/team.jpg'
 import Ahmed from '../../assets/images/team/ahmed.jpeg'
-import Ars from '../../assets/images/team/arsalan.jpg'
+import Ars from '../../assets/images/team/arslan-q.png'
 import Rao from '../../assets/images/team/rao.jpg'
 import Saad from '../../assets/images/team/saad.jpeg'
 import Waleed from '../../assets/images/team/waleed.jpeg'

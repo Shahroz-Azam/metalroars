@@ -506,7 +506,46 @@ a:hover{
 
 }
 
+/*mrTeam section css*/
 
+.technologyContainer{
+    background-color: #ff4600;
+}
+
+.technologyRow{
+    text-align: center;
+    padding: 0 0 80px 0;
+}
+
+.technologyHeading{
+    color: #fff;
+}
+
+.technologyHeading:hover{
+    color: #1d1d1d;
+}
+
+.binanceImage{
+    max-width: 250px;
+}
+
+.unityImage{
+    max-width: 200px;
+}
+
+
+@media screen and (max-width: 992px) {
+
+    
+    .binanceImage{
+        max-width: 150px;
+    }
+
+    .unityImage{
+        max-width: 100px;
+    }
+
+}
 
 
 
