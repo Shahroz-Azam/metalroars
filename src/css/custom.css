@@ -396,14 +396,9 @@ a:hover{
 
 /*tokenomics section css*/
 
-.tokenomicsRow{
-    padding: 80px 0;
-}
-
 .tokenomicsImg-sm{
     display: none;
 }
-
 
 @media screen and (max-width: 992px) {
 
@@ -421,6 +416,91 @@ a:hover{
     }
 }
 
+/*mrTeam section css*/
+
+.mrTeamContainer{
+    background-color: #1d1d1d;
+}
+
+.mrTeamRow{
+    padding: 0 0 40px;
+    text-align: center;
+}
+
+.memberContainer{
+    text-align: left;
+    align-items: center;
+    margin: 0 0 3rem;
+}
+
+.moreMemberContainer{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.memberDesignation{
+    font-size: 1rem;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    color: #ff4600;
+}
+
+.memberName{
+    letter-spacing: normal;
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 1;
+    margin: 1rem 0 0;
+}
+
+.moreMemberNumber{
+    display: inline-block;
+    color: #ff4600;
+    font-size: 66px;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    margin: 0 1rem 0 0;
+}
+
+.moreMemberText{
+    display: inline-block;
+    font-size: 20px;
+    line-height: 21px;
+    font-weight: 500;
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+
+    .moreMemberNumber{
+        font-size: 54px;
+        margin: 0 0.5rem 0 0;
+    }
+
+    .moreMemberText{
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .mrTeamRow{
+        padding: 30px 0;
+    }
+
+    .memberImage{
+        margin: 0 0 1rem 0;
+    }
+    
+    .moreMemberContainer{
+        position: unset;
+        top: unset;
+        transform: unset;
+        text-align: center;
+    }
+
+}
 
 
 

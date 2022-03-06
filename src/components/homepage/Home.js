@@ -60,7 +60,7 @@ export default function HomePage({ history }) {
                 <Container fluid className="tokenomicsContainer">
                     <TokenomicsDistribution />
                 </Container>
-                <Container fluid className="teamContainer">
+                <Container fluid className="mrTeamContainer">
                     <OurTeam/>
                 </Container>
                 <Container fluid className="technologyContainer">
