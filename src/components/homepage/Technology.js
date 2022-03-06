@@ -8,7 +8,6 @@ import Unity from '../../assets/images/unity.png'
 export default function Technology() {
     return (
         <>
-
             <Container>
                 <Row className="sectionRow technologyRow">
                     <Col lg={12}>
@@ -22,23 +21,6 @@ export default function Technology() {
                     </Col>
                 </Row>
             </Container>
-
-
-            {/* <Container>
-                <Row>
-                    <Col lg={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }}>
-                        <h1 className="technology_heading text-center">Technology</h1>
-                    </Col>
-                </Row>
-                <Row className="">
-                    <Col className="text-center" lg={{ span: 6, offset: 0 }} md={{ span: 6, offset: 0 }} xs={{ span: 6, offset: 0 }}>
-                        <Image className="binance_image" src={Binance} alt="binance logo" fluid={true} />
-                    </Col>
-                    <Col className="text-center" lg={{ span: 6, offset: 0 }} md={{ span: 6, offset: 0 }} xs={{ span: 6, offset: 0 }}>
-                        <Image className="unity_image" src={Unity} alt="unity logo" fluid={true} />
-                    </Col>
-                </Row>
-            </Container> */}
         </>
     )
 }

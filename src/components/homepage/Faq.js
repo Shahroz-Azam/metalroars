@@ -7,13 +7,11 @@ export default function Faq() {
     return(
         <>
             <Container>
-                <Row>
-                    <Col lg={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }} xs={{span: 12, offset: 0}}>
-                        <h1 className="faq_heading text-center">Faqs</h1>
+            <Row className="sectionRow faqRow">
+                    <Col lg={12}>
+                        <h1 className="sectionHeading faqHeading">FAQS</h1>
                     </Col>
-                </Row>
-                <Row>
-                    <Col lg={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }} xs={{span: 12, offset: 0}}>
+                    <Col lg={12}>
                         <Accordion>
                             <Accordion.Item eventKey="0">
                                 <Accordion.Header>Can you provide us with a brief introduction to Super Vet? </Accordion.Header>

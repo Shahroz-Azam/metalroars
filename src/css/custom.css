@@ -536,7 +536,6 @@ a:hover{
 
 @media screen and (max-width: 992px) {
 
-    
     .binanceImage{
         max-width: 150px;
     }
@@ -544,8 +543,16 @@ a:hover{
     .unityImage{
         max-width: 100px;
     }
-
 }
+
+/*faq section css*/
+
+.faqRow{
+    padding: 0 0 40px;
+    text-align: center;
+}
+
+/*footer section css*/
 
 
 
