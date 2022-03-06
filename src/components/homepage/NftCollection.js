@@ -136,14 +136,18 @@ export default function NftCollection({ history }) {
             <Container>
                 <Row className="sectionRow nftCollectionRow">
                     <Col lg={12}>
-                        <h1 className="sectionHeading nftCollectionHeading">NFT Monster Collection</h1>
+                        <h1 className="sectionHeading nftCollectionHeading">NFT <span className="nftCollectionHeadingPart">Monster</span> Collection</h1>
                     </Col>
                     <Col lg={12}>
-                        {/* Slider Row */}
+                        <h2> - - Slider Row Section  - - </h2>
                     </Col>
 
                     <Col lg={12}>
-                        {/* Full Slider */}
+                        <h2> - - Full Slider Section  - - </h2>
+                    </Col>
+                    
+                    <Col lg={12}>
+                        <p className="sectionText nftCollectionText">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit,</p>
                     </Col>
                 </Row>
             </Container>
