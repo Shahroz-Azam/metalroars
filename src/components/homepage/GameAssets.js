@@ -14,7 +14,7 @@ import Model2 from '../../assets/images/360/model2.mp4'
 import Model3 from '../../assets/images/360/model3.mp4'
 import BlackTruck from '../../assets/images/Black-Truck.png'
 
-export default function NftCollection({ history }) {
+export default function GameAssets({ history }) {
     const [slideCount, setSlideCount] = useState([1, 2, 3, 4, 5])
     const [activeSlide, setActiveSlide] = useState(1)
     const [nav1, setnav1] = useState(null)

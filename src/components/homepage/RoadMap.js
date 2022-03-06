@@ -18,13 +18,26 @@ export default function RoadMap({ history }) {
     //     let smoke = document.getElementById('road_map_smocke');
     //     smoke.style.transform  = 'translate(-200px, -40px)'
     // }
-    return(
+    return (
         <>
-            <Container id="road-map">
+            <Container>
+                <Row className="sectionRow roadMapRow">
+                    <Col lg={12}>
+                        <h1 className="sectionHeading roadMapHeading">ROADMAP</h1>
+                    </Col>
+                    <Col lg={12}>
+                        {/* Slider Section */}
+                    </Col>
+                    <Col lg={12}>
+                        <Image className="sectionImage roadMapImg" loading="lazy" src={RoadMapSmocky} alt="game play image" fluid={true} />
+                    </Col>
+                </Row>
+            </Container>
+            {/* <Container id="road-map">
                 <Row className="road_map_row mb-5">
-                    <Col lg={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }} xs={{span: 12, offset: 0}}>
+                    <Col lg={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }}>
                         <Row className="road_map_heading_row">
-                            <Col lg={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }} xs={{span: 12, offset: 0}}>
+                            <Col lg={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }}>
                                 <h1 className="road_map_heading text-center">
                                     {`RoadMap `}
                                 </h1>
@@ -34,41 +47,41 @@ export default function RoadMap({ history }) {
                     </Col>
                 </Row>
                 <Row className="road_map_row-2">
-                    <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{span: 3, offset: 0}}>
+                    <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{ span: 3, offset: 0 }}>
                         <h4 className="road_map_q">Q1  <span className="road_map_date">/ 2022</span></h4>
                     </Col>
-                    <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{span: 3, offset: 0}}>
+                    <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{ span: 3, offset: 0 }}>
                         <h4 className="road_map_q">Q2  <span className="road_map_date">/ 2022</span></h4>
                     </Col>
-                    <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{span: 3, offset: 0}}>
+                    <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{ span: 3, offset: 0 }}>
                         <h4 className="road_map_q">Q3  <span className="road_map_date">/ 2022</span></h4>
                     </Col>
-                    <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{span: 3, offset: 0}}>
+                    <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{ span: 3, offset: 0 }}>
                         <h4 className="road_map_q">Q4  <span className="road_map_date">/ 2022</span></h4>
                     </Col>
                 </Row>
                 <Row className="road_map_row-3">
-                    <Col lg={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }} xs={{span: 12, offset: 0}}>
-                        <hr id="road_map_hr"/>
+                    <Col lg={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }}>
+                        <hr id="road_map_hr" />
                     </Col>
                 </Row>
                 <Row className="road_map_row-4">
-                    <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{span: 3, offset: 0}}>
+                    <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{ span: 3, offset: 0 }}>
                         <Image width="20px" height="20px" className="road_map_hr_image" src={RoadMapIcon} alt="road map hr image" />
                     </Col>
-                    <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{span: 3, offset: 0}}>
+                    <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{ span: 3, offset: 0 }}>
                         <Image width="20px" height="20px" className="road_map_hr_image" src={RoadMapIcon} alt="road map hr image" />
                     </Col>
-                    <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{span: 3, offset: 0}}>
+                    <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{ span: 3, offset: 0 }}>
                         <Image width="20px" height="20px" className="road_map_hr_image" src={RoadMapIcon} alt="road map hr image" />
                     </Col>
-                    <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{span: 3, offset: 0}}>
+                    <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{ span: 3, offset: 0 }}>
                         <Image width="20px" height="20px" className="road_map_hr_image" src={RoadMapIcon} alt="road map hr image" />
                     </Col>
                 </Row>
 
                 <Row className="road_map_row-5 mt-lg-3">
-                    <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{span: 6, offset: 0}}>
+                    <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{ span: 6, offset: 0 }}>
                         <ul className="road_map_ul">
                             <li>Smart Contract / Audit </li>
                             <li>Whitepaper/pitchdeck </li>
@@ -78,7 +91,7 @@ export default function RoadMap({ history }) {
                             <li>Gameplay Video </li>
                         </ul>
                     </Col>
-                    <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{span: 6, offset: 0}}>
+                    <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{ span: 6, offset: 0 }}>
                         <ul className="road_map_ul">
                             <li>Marketing Round 1 </li>
                             <li>Game trailer </li>
@@ -87,7 +100,7 @@ export default function RoadMap({ history }) {
                             <li>NFT Character Release </li>
                         </ul>
                     </Col>
-                    <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{span: 6, offset: 0}}>
+                    <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{ span: 6, offset: 0 }}>
                         <ul className="road_map_ul">
                             <li>Game alpha On Web GL </li>
                             <li>Nft Marketplace </li>
@@ -97,7 +110,7 @@ export default function RoadMap({ history }) {
                             <li>Nft Staking </li>
                         </ul>
                     </Col>
-                    <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{span: 6, offset: 0}}>
+                    <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{ span: 6, offset: 0 }}>
                         <ul className="road_map_ul">
                             <li>Game Beta Android & ios </li>
                             <li>Garage  & Truck Upgrade</li>
@@ -107,11 +120,11 @@ export default function RoadMap({ history }) {
                     </Col>
                 </Row>
                 <Row className="road_map_row-6 mt-lg-3">
-                    <Col className="text-center" lg={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }} xs={{span: 12, offset: 0}}>
-                        <Image loading="lazy" width="800px" height="500px" className="road_map_smocky_truck" src={RoadMapSmocky} alt="road map smocky truck" fluid={true}/>
+                    <Col className="text-center" lg={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }}>
+                        <Image loading="lazy" width="800px" height="500px" className="road_map_smocky_truck" src={RoadMapSmocky} alt="road map smocky truck" fluid={true} />
                     </Col>
                 </Row>
-            </Container>
+            </Container> */}
 
 
         </>

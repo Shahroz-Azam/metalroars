@@ -23,6 +23,7 @@ const RoadMap = React.lazy(() => import('./RoadMap'));
 const OurTeam = React.lazy(() => import('./OurTeam'));
 // const Advisors = React.lazy(() => import('./Advisors'));
 const NftCollection = React.lazy(() => import('./NftCollection'));
+const GameAssets = React.lazy(() => import('./GameAssets'));
 const NewsFeed = React.lazy(() => import('./NewsFeed'));
 const TokonomicsDistribution = React.lazy(() => import('./TokonomicsDistribution'));
 const Technology = React.lazy(() => import('./Technology'));
@@ -32,37 +33,40 @@ export default function HomePage({ history }) {
     return(
         <>
             <Suspense fallback={<Spinner />}>
-                <Container className="" fluid>
+                <Container fluid className="headerContainer">
                     <Header />
                 </Container>
-                <Container className="padding-zero" fluid={true}>
+                <Container fluid className="bannerContainer padding-zero">
                     <Banner />
                 </Container>
-                <Container className="gamePlayContainer" fluid={true}>
+                <Container fluid className="gamePlayContainer">
                     <GamePlay/>
                 </Container>
-                <Container fluid={true} className="freeToPlayContainer">
+                <Container fluid className="freeToPlayContainer">
                     <FreePlay/>
                 </Container>
-                <Container fluid={true}>
+                <Container fluid className="roadMapContainer">
                     <RoadMap/>
                 </Container>
-                <Container fluid={true} className="nft_container">
+                <Container fluid className="nftCollectionContainer">
                     <NftCollection />
                 </Container>
-                <Container className="news_feed_container" fluid={true}>
+                <Container fluid className="gameAssetsContainer">
+                    <GameAssets />
+                </Container>
+                <Container fluid className="newsFeedContainer">
                     <NewsFeed />
                 </Container>
-                <Container className="tokonomics_container" fluid={true}>
+                <Container fluid className="tokenomicsContainer">
                     <TokonomicsDistribution />
                 </Container>
-                <Container className="team_container" fluid={true}>
+                <Container fluid className="teamContainer">
                     <OurTeam/>
                 </Container>
-                <Container className="technology_container" fluid={true}>
+                <Container fluid className="technologyContainer">
                     <Technology />
                 </Container>
-                <Container className="faq_container" fluid={true}>
+                <Container fluid className="faqContainer">
                     <Faq />
                 </Container>
                 <Footer/>
