@@ -58,16 +58,19 @@ export default function NewsFeed({ history }) {
                         <h1 className="sectionHeading newsFeedHeading">News Feed</h1>
                     </Col>
                     <Col lg={6}>
-                        {/* Slider Images */}
+                        <h2> - - Slider Images  - - </h2>
                     </Col>
                     <Col lg={6}>
+                        <h2 className="sectionHeading newsFeedSubHeading">News Feed</h2>
                         <p className="sectionText newsFeedText">Metal Roars is a Free-to-play and Play-to-earn blockchain-based action game consisting of stunts, racing and battle modes. In the games players can use NFT Trucks & equipment and go to war, race & stunts with other players in an ever-expanding gaming world where the possibilities are limitless.
                             Metal Roars allow users to collect and make in-game purchases of exciting items such as trucks, weapons and upgrades. The game allows users to use their collectibles and head into battle with their opponents. Furthermore, our game has multiple modes that include Battle and Racing allowing users to earn rewards while playing the game.</p>
-                        {/* Slider Images */}
+                        <a href="/#" className="newsFeedLink">Read More</a>
+                        <h2> - - Slider Images for mobile screen  - - </h2>
+
                     </Col>
                 </Row>
             </Container>
-            <Container>
+            {/* <Container>
                 <Row className="news_feed_row">
                     <Col lg={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }}>
                         <Row className="news_feed_heading_row">
@@ -78,8 +81,6 @@ export default function NewsFeed({ history }) {
                     </Col>
                 </Row>
                 <Row className="news_feed_row-2">
-                    {/*id="newsFeedLeftBtn"*/}
-                    {/*id="newsFeedRightBtn"*/}
                     <Col lg={{ span: 6, offset: 0 }} md={{ span: 6, offset: 0 }} xs={{ span: 12, offset: 0 }} >
                         <Swiper
                             effect={"cards"}
@@ -106,7 +107,7 @@ export default function NewsFeed({ history }) {
                                     // console.log(value)
                                     return (
                                         <SwiperSlide key={key}>
-                                            {/*<input type="hidden" className="medium_id" value={value.link} />*/}
+                                            <input type="hidden" className="medium_id" value={value.link} />
                                             <Image width="350px" height="300px" className="swiper_image" loading="lazy" src={value.thumbnail} alt={value.title} fluid={true} />
                                         </SwiperSlide>
                                     )
@@ -142,7 +143,7 @@ export default function NewsFeed({ history }) {
                         <a href="/#" target="_blank" className="news_feed_link" id="news_feed_link">Learn more</a>
                     </Col>
                 </Row>
-            </Container>
+            </Container> */}
 
         </>
     )

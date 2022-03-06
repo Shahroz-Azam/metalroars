@@ -44,8 +44,6 @@ body{
 
 .navbar{
     padding: 0;
-    position: sticky;
-    top: 0;
 }
 a{
     color: #ffffff;
@@ -59,6 +57,13 @@ a:hover{
 .header-div{
     padding: 0;
     margin: 0;
+}
+
+.headerContainer{
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    z-index: 1;
 }
 
 .followContainer{
@@ -327,6 +332,55 @@ a:hover{
         margin: 0 0 30px 0;
     }
 }
+
+/*news feed section css*/
+
+.newsFeedContainer{
+    background-color: #ff4600;
+}
+
+.newsFeedRow{
+    padding: 0 0 80px 0;
+}
+
+.newsFeedHeading{
+    text-align: center;
+    color: #fff;
+}
+
+.newsFeedHeading:hover{
+    color: #1d1d1d;
+}
+
+.newsFeedSubHeading{
+    color: #fff;
+    font-size: 20px;
+    line-height: 41px;
+    margin: 10px 0 0;
+}
+
+.newsFeedSubHeading:hover{
+    color: #1d1d1d;
+    font-size: 22px;
+}
+
+.newsFeedText{
+    margin: 10px 0;
+    line-height: 25px;
+}
+
+.newsFeedLink{
+    display: inline-block;
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 992px) {
+
+    .newsFeedRow{
+        padding: 0 0 30px 0;
+    }
+}
+
 
 
 
