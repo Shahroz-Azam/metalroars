@@ -25,7 +25,7 @@ const OurTeam = React.lazy(() => import('./OurTeam'));
 const NftCollection = React.lazy(() => import('./NftCollection'));
 const GameAssets = React.lazy(() => import('./GameAssets'));
 const NewsFeed = React.lazy(() => import('./NewsFeed'));
-const TokonomicsDistribution = React.lazy(() => import('./TokonomicsDistribution'));
+const TokenomicsDistribution = React.lazy(() => import('./TokenomicsDistribution'));
 const Technology = React.lazy(() => import('./Technology'));
 const Faq = React.lazy(() => import('./Faq'));
 
@@ -58,7 +58,7 @@ export default function HomePage({ history }) {
                     <NewsFeed />
                 </Container>
                 <Container fluid className="tokenomicsContainer">
-                    <TokonomicsDistribution />
+                    <TokenomicsDistribution />
                 </Container>
                 <Container fluid className="teamContainer">
                     <OurTeam/>
