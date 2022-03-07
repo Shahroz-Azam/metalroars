@@ -1,4 +1,4 @@
-import React,{useState,useEffect,useRef} from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from 'react-bootstrap/Image'
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -15,14 +15,14 @@ import Model3 from '../../assets/images/360/model3.mp4'
 import BlackTruck from '../../assets/images/Black-Truck.png'
 
 export default function NftCollection({ history }) {
-    const [slideCount,setSlideCount] = useState([1,2,3,4,5])
-    const [activeSlide,setActiveSlide] = useState(1)
-    const [nav1,setnav1] = useState(null)
-    const [nav2,setnav2] = useState(null)
+    const [slideCount, setSlideCount] = useState([1, 2, 3, 4, 5])
+    const [activeSlide, setActiveSlide] = useState(1)
+    const [nav1, setnav1] = useState(null)
+    const [nav2, setnav2] = useState(null)
     // const [slickF,setSlickF] = useState('')
     let slide1 = useRef(null);
     let slide2 = useRef(null);
-    useEffect(()=>{
+    useEffect(() => {
         // let slide1 = document.getElementById('truck_image_1');
         // let slide2 = document.getElementById('truck_image_2');
         // let slide3 = document.getElementById('truck_image_3');
@@ -35,7 +35,7 @@ export default function NftCollection({ history }) {
         setnav1(slide1)
         setnav2(slide2)
 
-    },[nav1,nav2])
+    }, [nav1, nav2])
     const settings = {
         dots: false,
         infinite: true,
@@ -53,8 +53,8 @@ export default function NftCollection({ history }) {
         //         console.log(currentSlide)
         //     }
         // },
-        afterChange: function(index) {
-           setActiveSlide(index + 1)
+        afterChange: function (index) {
+            setActiveSlide(index + 1)
         },
         responsive: [
 
@@ -87,11 +87,11 @@ export default function NftCollection({ history }) {
         // beforeChange: (current, next) => {
         //     console.log(current)
         //     // let currentSlide = current+1;
-            // if(!slideCount.includes(currentSlide)){
-            //     console.log(currentSlide)
-            // }
+        // if(!slideCount.includes(currentSlide)){
+        //     console.log(currentSlide)
+        // }
         // },
-        afterChange: function(index) {
+        afterChange: function (index) {
             setActiveSlide(index + 1)
         },
         responsive: [
@@ -112,11 +112,11 @@ export default function NftCollection({ history }) {
             }
         ]
     };
-    function slicPrev(e){
+    function slicPrev(e) {
         slide1.slickPrev()
         slide2.slickPrev()
     }
-    function slicNext(e){
+    function slicNext(e) {
         // console.log(slide1.slickNext())
         slide1.slickNext()
         slide2.slickNext()
@@ -131,13 +131,31 @@ export default function NftCollection({ history }) {
     models[2] = Model2;
     models[3] = Model3;
 
-    return(
+    return (
         <>
+            <Container>
+                <Row className="sectionRow nftCollectionRow">
+                    <Col lg={12}>
+                        <h1 className="sectionHeading nftCollectionHeading">NFT <span className="nftCollectionHeadingPart">Monster</span> Collection</h1>
+                    </Col>
+                    <Col lg={12}>
+                        <h2> - - Slider Row Section  - - </h2>
+                    </Col>
+
+                    <Col lg={12}>
+                        <h2> - - Full Slider Section  - - </h2>
+                    </Col>
+                    
+                    <Col lg={12}>
+                        <p className="sectionText nftCollectionText">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit,</p>
+                    </Col>
+                </Row>
+            </Container>
             <Container className="nft_collection_container">
                 <Row className="nft_collection_row">
-                    <Col lg={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }} xs={{span: 12, offset: 0}}>
+                    <Col lg={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }}>
                         <Row className="nft_collection_heading_row mt-lg-5 pt-lg-5">
-                            <Col lg={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }} xs={{span: 12, offset: 0}}>
+                            <Col lg={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }}>
                                 <h1 className="nft_collection_heading text-center">Nft <span className="nft_collection_monster_heading">Monster</span> Collection</h1>
                             </Col>
                         </Row>
@@ -145,18 +163,18 @@ export default function NftCollection({ history }) {
                 </Row>
 
                 <Row className="nft_collection_row-2">
-                    <Col lg={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }} xs={{span: 12, offset: 0}}>
+                    <Col lg={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }}>
                         <Slider {...settings}
                             asNavFor={nav2}
                             // ref={slide1}
-                            ref={(d)=>{
+                            ref={(d) => {
                                 slide1 = d
                             }}
 
                         >
                             {
-                                slideCount.map((value,key)=>{
-                                    return(
+                                slideCount.map((value, key) => {
+                                    return (
                                         <div key={key} className="d-flex justify-content-center">
                                             <Image
                                                 className="d-block truck_image"
@@ -173,19 +191,19 @@ export default function NftCollection({ history }) {
                                 })
                             }
                         </Slider>
-                        <hr id="nft_collection_hr"/>
+                        <hr id="nft_collection_hr" />
                         {/*<p id="nft_collection_p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit,</p>*/}
                     </Col>
                 </Row>
                 <Row>
 
-                    <Col lg={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }} xs={{span: 12, offset: 0}} style={{position: 'relative'}}>
+                    <Col lg={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }} style={{ position: 'relative' }}>
                         <button id="slickPrev" onClick={((e) => slicPrev(e))}></button>
                         <Slider
                             {...settings2}
                             asNavFor={nav1}
                             // ref={slide2}
-                            ref={(d)=>{
+                            ref={(d) => {
                                 slide2 = d
                             }}
                             slidesToShow={1}
@@ -194,8 +212,8 @@ export default function NftCollection({ history }) {
 
                         >
                             {
-                                slideCount.map((value,key)=>{
-                                    return(
+                                slideCount.map((value, key) => {
+                                    return (
                                         <div key={key} className="d-flex justify-content-center truck_image_div">
                                             {/*onClick={slide2.slickPrev()}*/}
                                             {/*<Image src={Flipper1} alt="First slide" width="200px"*/}
