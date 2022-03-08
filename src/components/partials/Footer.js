@@ -16,54 +16,57 @@ export default function Footer({ history }) {
     }
     return(
         <footer className="footer">
-            <Container>
-                <Row className="footer_row d-flex justify-content-center">
-                    <Col className="footer-logo-col text-center" lg={{ span: 4, offset: 0 }} md={{ span: 4, offset: 0 }} xs={{span: 12, offset: 0}}>
+            <Container fluid className="footerContainer">
+                <Row className="footerRow d-flex justify-content-center">
+                    <Col className="footerLogo-col text-center" lg={{ span: 4, offset: 0 }} md={{ span: 4, offset: 0 }} xs={{span: 12, offset: 0}}>
                         <Image className="footerLogo" src={Logo} alt="metal roar logo" />
                     </Col>
                 </Row>
-                <Row className="footer_row-2 d-flex justify-content-center">
+                <Row className="footerRow2 d-flex justify-content-center">
                     <Col lg={2} xs={2}>
-                        <a target="_blank" rel="noreferrer" href="/#"><Image className="footer-social-image" src={insta} alt="instagram logo" /></a>
+                        <a target="_blank" rel="noreferrer" href="/#"><Image className="footerSocialImage" src={insta} alt="instagram logo" /></a>
                         {/*<h4 className="footer-social-link">@metalroars</h4>*/}
                     </Col>
                     <Col lg={2} xs={2}>
-                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/metal-roars-86494122b/"><Image className="footer-social-image" src={linkdin} alt="linkdin logo" /></a>
+                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/metal-roars-86494122b/"><Image className="footerSocialImage" src={linkdin} alt="linkdin logo" /></a>
                         {/*<h4 className="footer-social-link">@metalroars</h4>*/}
                     </Col>
                     <Col lg={2} xs={2}>
-                        <a target="_blank" rel="noreferrer" href="https://twitter.com/Metal_Roars"><Image className="footer-social-image" src={twitter} alt="twitter logo" /></a>
+                        <a target="_blank" rel="noreferrer" href="https://twitter.com/Metal_Roars"><Image className="footerSocialImage" src={twitter} alt="twitter logo" /></a>
                         {/*<h4 className="footer-social-link">@metalroars</h4>*/}
                     </Col>
                     <Col lg={2} xs={2}>
-                        <a target="_blank" rel="noreferrer" href="/#"><Image className="footer-social-image" src={tele} alt="tele logo" /></a>
+                        <a target="_blank" rel="noreferrer" href="/#"><Image className="footerSocialImage" src={tele} alt="tele logo" /></a>
                         {/*<h4 className="footer-social-link">@metalroars</h4>*/}
                     </Col>
                     <Col lg={2} xs={2}>
-                        <a target="_blank" rel="noreferrer" href="https://medium.com/@metalroars"><Image className="footer-social-image" src={medium} alt="medium logo" /></a>
+                        <a target="_blank" rel="noreferrer" href="https://medium.com/@metalroars"><Image className="footerSocialImage" src={medium} alt="medium logo" /></a>
                         {/*<h4 className="footer-social-link">@metalroars</h4>*/}
                     </Col>
                 </Row>
                 <Row className="footerBtns d-flex justify-content-center text-center">
                     <Col lg={4} xs={4} className="footerBtn">
-                       <a href="/#" className="footer-links text-center">WHITEPAPER</a>
+                       <a href="/#" className="footerLink text-center">WHITEPAPER</a>
                     </Col>
                     <Col lg={4} xs={4} className="footerBtn">
-                        <a href="/#" className="footer-links marketplaceButton text-center">Market Place</a>
+                        <a href="/#" className="footerLink marketplaceButton text-center">Market Place</a>
                     </Col>
                     <Col lg={4} xs={4} className="footerBtn">
-                        <a href="/#" className="footer-links text-center">Pitch Deck</a>
+                        <a href="/#" className="footerLink text-center">Pitch Deck</a>
                     </Col>
                 </Row>
-                <Row className="footer_row-4 d-flex justify-content-center">
+                <Row className="footerRow4 d-flex justify-content-center">
                     <Col lg={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }} xs={{span: 12, offset: 0}}>
                         <a href="#top" onClick={scrollToTop}>
-                            <Image className="footer-social-image" src={scroll} width="40px" height="40px" alt="scroll logo" />
-                            <h4 className="footer-scroll">Scroll To Top</h4>
+                            <Image className="footerSocialImage" src={scroll} alt="scroll logo" />
+                            <h4 className="footerScrollText">Scroll To Top</h4>
                         </a>
                     </Col>
                 </Row>
 
+            </Container>
+            <Container className="footerRow4 d-flex justify-content-center">
+                <p>Address: M9B 4L5 CA</p>
             </Container>
 
         </footer>
