@@ -16,7 +16,7 @@ export default function FreePlay({ history }) {
                 <Col lg={6}>
                     <h1 className="sectionHeading freeToPlayHeading">Free-to-Play <br></br>Play-to-Earn</h1>
                     <p className="sectionText freeToPlayText">Metal Roars is a Free-to-play and Play-to-earn blockchain-based action game consisting of stunts, racing and battle modes. In the games players can use NFT Trucks & equipment and go to war, race & stunts with other players in an ever-expanding gaming world where the possibilities are limitless.
-Metal Roars allow users to collect and make in-game purchases of exciting items such as trucks, weapons and upgrades. The game allows users to use their collectibles and head into battle with their opponents. Furthermore, our game has multiple modes that include Battle and Racing allowing users to earn rewards while playing the game.</p>
+Metal Roars allow users to collect and make in-game purchases of exciting items such as trucks, weapons and upgrades. The game allows users to use their collectibles and head into battle with their opponents. </p>
                     <Image className="sectionImage freeToPlayImg2" loading="lazy" src={FreeToPlay} alt="free to play image" fluid={true} />
                 </Col>
                 </Row>
