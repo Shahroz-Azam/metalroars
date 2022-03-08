@@ -131,6 +131,42 @@ export default function NftCollection({ history }) {
     models[2] = Model2;
     models[3] = Model3;
 
+
+
+// Slider start
+
+// var slideIndex = 1;
+// showSlides(slideIndex);
+
+// // Next/previous controls
+// const plusSlides = (n) => {
+//   showSlides(slideIndex += n);
+// }
+
+// // Thumbnail image controls
+// const currentSlide = (n) => {
+//   showSlides(slideIndex = n);
+// }
+
+// function showSlides(n) {
+//   var i;
+//   var slides = document.getElementsByClassName("mySlides");
+//   var dots = document.getElementsByClassName("demo");
+//   var captionText = document.getElementById("caption");
+//   if (n > slides.length) {slideIndex = 1}
+//   if (n < 1) {slideIndex = slides.length}
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
+//   for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(" active", "");
+//   }
+//   slides[slideIndex-1].style.display = "block";
+//   dots[slideIndex-1].className += " active";
+//   captionText.innerHTML = dots[slideIndex-1].alt;
+// }
+
+
     return (
         <>
             <Container>
@@ -140,10 +176,71 @@ export default function NftCollection({ history }) {
                     </Col>
                     <Col lg={12}>
                         <h2> - - Slider Row Section  - - </h2>
+                        
+                        {/* <!-- Thumbnail images --> */}
+                        {/* <div class="row">
+                            <div class="column">
+                            <Image class="demo cursor" src={Truck1} style="width:100%" onClick={currentSlide(1)} alt="The Woods" />
+                            </div>
+                            <div class="column">
+                            <Image class="demo cursor" src={Truck2} style="width:100%" onClick={currentSlide(2)} alt="Cinque Terre" />
+                            </div>
+                            <div class="column">
+                            <Image class="demo cursor" src={Truck3} style="width:100%" onClick={currentSlide(3)} alt="Mountains and fjords" />
+                            </div>
+                        </div> */}
+                        
                     </Col>
 
                     <Col lg={12}>
+
+                        
                         <h2> - - Full Slider Section  - - </h2>
+
+                        {/* <!-- Container for the image gallery --> */}
+                        <div class="sliderContainer">
+
+                            {/* <!-- Full-width images with number text --> */}
+                            {/* <div class="mySlides">
+                                <div class="numbertext">1 / 6</div>
+                                <Image src={Truck1} style="width:100%" />
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 6</div>
+                                <Image src={Truck2} style="width:100%" />
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 6</div>
+                                <Image src={Truck3} style="width:100%" />
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">4 / 6</div>
+                                <Image src={Truck1} style="width:100%" />
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">5 / 6</div>
+                                <Image src={Truck2} style="width:100%" />
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">6 / 6</div>
+                                <Image src={Truck3} style="width:100%" />
+                            </div> */}
+
+                            {/* <!-- Next and previous buttons --> */}
+                            {/* <a class="prev" onClick={plusSlides(-1)}>&#10094;</a>
+                            <a class="next" onClick={plusSlides(1)}>&#10095;</a> */}
+
+                            {/* <!-- Image text --> */}
+                            {/* <div class="caption-container">
+                                <p id="caption"></p>
+                            </div> */}
+
+                        </div>
                     </Col>
                     
                     <Col lg={12}>
