@@ -323,6 +323,14 @@ a:hover {
     margin: 70px 0;
 }
 
+.sliderButton{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    display: inline-block;
+}
+
 /* slider */
 
 * {
@@ -851,6 +859,7 @@ a:hover {
 
 .truck_image_bottom {
     margin-top: 2rem;
+    width: 100%;
 }
 
 .slick-prev:before,
@@ -875,14 +884,12 @@ a:hover {
     font-size: 16px;
 }
 
-.truck_image_div::before {
+/* .truck_image_div::before {
     content: url('../assets/images/fliper_1.svg');
-    /* with class ModalCarrot ??*/
     position: relative;
-    /*or absolute*/
-    /*z-index:100000; !*a number that's more than the modal box*!*/
-    /*left:-50px;*/
-    /*top:10px;*/
+    z-index:100000;
+    left:-50px;
+    top:10px;
     width: 200px;
 }
 
@@ -890,7 +897,7 @@ a:hover {
     content: url('../assets/images/fliper_2.svg');
     position: relative;
     width: 200px;
-}
+} */
 
 #slickPrev {
     width: 100px;
