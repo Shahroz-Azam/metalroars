@@ -293,12 +293,13 @@ a:hover {
     background-color: #1d1d1d;
 }
 
-.roadMapRow {
+.roadMapHeading {
     text-align: center;
 }
 
 .roadMapImgContainer {
     margin: 60px 0;
+    text-align: center;
 }
 
 .roadMapImg {
@@ -307,8 +308,94 @@ a:hover {
 }
 
 .roadMapImg:hover {
-    transform: translate(-1%, 1%);
+    transform: translate(-2%, -2%);
 }
+
+/*road map css*/
+
+.roadMapQ {
+    font-size: 21px;
+}
+
+.roadMapDate {
+    color: #FF4600;
+}
+
+.hrContainer{
+    position: relative;
+}
+
+.roadMap_hr {
+    border: 1px solid #fff;
+    opacity: 1;
+}
+
+.roadMap_hrImage {
+    position: absolute;
+    top: -0.75em;
+}
+
+.roadMap_ul{
+    overflow: hidden;
+}
+
+.roadMap_ul li {
+    font-family: Square721-BT-Roman !important;
+}
+
+.roadMap_ul li::marker {
+    font-size: 1.6em;
+    color: #FF4600;
+}
+
+.mblRoadmapBtnContainer{
+    display: none;
+}
+
+.dsktpRoadmapBtnContainer{
+    margin-bottom: 1em;
+}
+
+.roadmapBtn{
+    color: #fff;
+    background-color: transparent;
+    padding: 5px 16px;
+    border: 2px solid #fff;
+    margin: 0 0 0 0.5em;
+    font-size: 2em;
+    line-height: 1em;
+    transition: color ease 0.2s, border ease 0.4s;
+}
+
+.roadmapBtn:hover{
+    color: #ff4600;
+    border: 2px solid #ff4600;
+
+}
+
+@media screen and (max-width: 992px) {
+    /* .roadMap_ul{
+        margin-right: 20px;
+    } */
+
+    .roadMapImg{
+        width: 100%;
+    }
+
+    .roadMapImgContainer {
+        margin: 30px 0;
+    }
+    
+    .mblRoadmapBtnContainer{
+        display:unset;
+    }
+
+    .dsktpRoadmapBtnContainer{
+        display: none;
+    }
+}
+
+
 
 /*nftCollection section css*/
 .nftCollectionRow {
@@ -373,24 +460,10 @@ a:hover {
     display: none;
 }
 
-/* .truck_image_div::before {
-    content: url('../assets/images/fliper_1.svg');
-    position: relative;
-    z-index:100000;
-    left:-50px;
-    top:10px;
-    width: 200px;
-}
-
-.truck_image_div::after {
-    content: url('../assets/images/fliper_2.svg');
-    position: relative;
-    width: 200px;
-} */
 
 @media screen and (max-width: 992px) {
     .truckImage{
-        max-width: 100px;
+        max-width: 80px;
     }
 
     .sliderButton{
@@ -764,52 +837,7 @@ a:hover {
 
 /* Waleed CSS */
 
-/*road map css*/
-#road-map {
-    padding-top: 11rem;
-    padding-bottom: 11rem;
-}
 
-.road_map_heading_div {
-    padding-bottom: 3rem;
-}
-
-.road_map_row {
-    margin-bottom: 2rem;
-}
-
-.road_map_date {
-    color: #FF4600;
-}
-
-#road_map_hr {
-    border: 1px solid #ffffff;
-    height: 2px;
-    background-color: #fff;
-    color: #fff;
-    opacity: 1;
-}
-
-.road_map_q {
-    font-size: 21px;
-}
-
-.road_map_row-4 {
-    position: relative;
-    top: -30px;
-}
-
-.road_map_ul li {
-    font-family: Square721-BT-Roman !important;
-    /*font-weight: 600 !important;*/
-    /*color: #ffffff;*/
-}
-
-.road_map_ul li::marker {
-    font-size: 1rem;
-    font-weight: bolder;
-    color: #FF4600;
-}
 
 /*.road_map_smocke{*/
 /*    transform: translate(-200px, -40px)*/

@@ -11,9 +11,9 @@ import Col from "react-bootstrap/Col";
 import Truck1 from '../../assets/images/Truck-1.png'
 import Truck2 from '../../assets/images/Truck-2.png'
 import Truck3 from '../../assets/images/Truck-3.png'
-import Model1 from '../../assets/images/360/model1.mp4'
-import Model2 from '../../assets/images/360/model2.mp4'
-import Model3 from '../../assets/images/360/model3.mp4'
+import Model1 from '../../assets/images/360/Metal1.mp4'
+import Model2 from '../../assets/images/360/Metal2.mp4'
+import Model3 from '../../assets/images/360/Metal3.mp4'
 
 import Flipper1 from '../../assets/images/fliper_1.svg'
 import Flipper2 from '../../assets/images/fliper_2.svg'
@@ -68,6 +68,13 @@ export default class AsNavFor extends Component {
             infinite: true,
           }
         },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+          }
+        }
       ]
     };
     return (
