@@ -313,114 +313,90 @@ a:hover {
 /*nftCollection section css*/
 .nftCollectionRow {
     text-align: center;
-}
-
-.nftCollectionHeadingPart {
+    margin: 0 0 80px;
+  }
+  
+  .nftCollectionHeadingPart {
     color: #ffffff;
-}
-
-.nftCollectionText {
+  }
+  
+  .nftCollectionText {
     margin: 70px 0;
-}
-
-.sliderButton{
+  }
+  
+  .sliderButton{
     background-color: transparent;
     outline: none;
     border: none;
     width: 100%;
     display: inline-block;
-}
-
-/* slider */
-
-* {
-    box-sizing: border-box;
   }
   
-  /* Position the image container (needed to position the left and right arrows) */
-  .sliderContainer {
-    position: relative;
+  /*nft monster collection css*/
+  
+  .bigSliderSection{
+    align-items: center;
+    margin-top: 80px;
   }
   
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* Container for image text */
-  .caption-container {
+  .truckContainer{
     text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
   }
   
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  .truckImage{
+    max-width: 180px;
+    display: inline-block !important;
+    margin: auto 0;
   }
   
-  /* Six columns side by side */
-  .column {
-    float: left;
-    width: 16.66%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
+  .nftCollection_hr {
+    border: 1px solid #FF4600;
+    height: 2px;
+    background-color: #fff;
+    color: #fff;
     opacity: 1;
   }
+  
+  .truckVideo {
+    width: 100%;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+      display: none;
+  }
 
-/* slider End */
+.nftCollectionTextContainer {
+    font-family: Square721-BT-Roman !important;
+    font-size: 16px;
+    margin-top: 80px;
+    display: none;
+}
+
+/* .truck_image_div::before {
+    content: url('../assets/images/fliper_1.svg');
+    position: relative;
+    z-index:100000;
+    left:-50px;
+    top:10px;
+    width: 200px;
+}
+
+.truck_image_div::after {
+    content: url('../assets/images/fliper_2.svg');
+    position: relative;
+    width: 200px;
+} */
+
+@media screen and (max-width: 992px) {
+    .truckImage{
+        max-width: 100px;
+    }
+
+    .sliderButton{
+        display: none;
+      }
+}
 
 /*gameAssets section css*/
 .gameAssetsContainer {
@@ -842,84 +818,7 @@ a:hover {
     transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
-/*nft monster collection css*/
-.nft_container {
 
-    background-color: #1D1D1D;
-}
-
-.nft_collection_row-2 {
-    margin-bottom: 4rem;
-}
-
-.nft_collection_container {
-    padding-top: 4rem;
-    padding-bottom: 8.5rem;
-}
-
-.truck_image_bottom {
-    margin-top: 2rem;
-    width: 100%;
-}
-
-.slick-prev:before,
-.slick-next:before {
-    display: none;
-}
-
-.nft_collection_row {
-    margin-bottom: 2rem;
-}
-
-#nft_collection_hr {
-    border: 1px solid #FF4600;
-    height: 2px;
-    background-color: #fff;
-    color: #fff;
-    opacity: 1;
-}
-
-#nft_collection_p {
-    font-family: Square721-BT-Roman !important;
-    font-size: 16px;
-}
-
-/* .truck_image_div::before {
-    content: url('../assets/images/fliper_1.svg');
-    position: relative;
-    z-index:100000;
-    left:-50px;
-    top:10px;
-    width: 200px;
-}
-
-.truck_image_div::after {
-    content: url('../assets/images/fliper_2.svg');
-    position: relative;
-    width: 200px;
-} */
-
-#slickPrev {
-    width: 100px;
-    height: 360px;
-    opacity: 0;
-    background-color: black;
-    position: absolute;
-    top: 4rem;
-    left: 10rem;
-    z-index: 1;
-}
-
-#slickNext {
-    width: 100px;
-    height: 360px;
-    opacity: 0;
-    background-color: black;
-    position: absolute;
-    top: 4rem;
-    right: 10rem;
-    z-index: 1;
-}
 
 /*news feed css*/
 .news_feed_container {
