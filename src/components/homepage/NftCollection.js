@@ -16,6 +16,7 @@ import BlackTruck from '../../assets/images/Black-Truck.png'
 import Flipper1 from '../../assets/images/fliper_1.svg'
 import Flipper2 from '../../assets/images/fliper_2.svg'
 
+
 export default function NftCollection({ history }) {
     const [slideCount, setSlideCount] = useState([1, 2, 3, 4, 5, 6])
     const [activeSlide, setActiveSlide] = useState(1)
@@ -48,15 +49,16 @@ export default function NftCollection({ history }) {
         focusOnSelect: true,
         speed: 100,
         // initialSlide: 2,
-        slidesToShow: 5,
+        slidesToShow: 3,
         slidesToScroll: 1,
-        beforeChange: function (current, next) {
-            if (current === 0 && next === slideCount.length) {
-                setActiveSlide(next+2)
-            } else {
-                setActiveSlide(next+1)
-            }
-        },
+        // beforeChange: function (current, next) {
+        //     console.log(current, next);
+        //     if (current === 0 && next === slideCount.length) {
+        //         setActiveSlide(next+2)
+        //     } else {
+        //         setActiveSlide(next+1)
+        //     }
+        // },
         responsive: [
 
             {
@@ -85,13 +87,13 @@ export default function NftCollection({ history }) {
         speed: 100,
         slidesToShow: 1,
         slidesToScroll: 1,
-        beforeChange: function (current, next) {
-            if (current === 0 && next === slideCount.length) {
-                setActiveSlide(next+2)
-            } else {
-                setActiveSlide(next+1)
-            }
-        },
+        // beforeChange: function (current, next) {
+        //     if (current === 0 && next === slideCount.length) {
+        //         setActiveSlide(next+2)
+        //     } else {
+        //         setActiveSlide(next+1)
+        //     }
+        // },
         responsive: [
 
             {
@@ -113,11 +115,11 @@ export default function NftCollection({ history }) {
     function slicPrev(e) {
         slide1.slickPrev()
         slide2.slickPrev()
-        console.log(activeIndex);
+        // console.log(activeIndex);
 
-        if (activeIndex === 0) {
-            setActiveSlide(4)
-        }
+        // if (activeIndex === 0) {
+        //     setActiveSlide(4)
+        // }
     }
     function slicNext(e) {
         // console.log(slide1.slickNext())
@@ -203,7 +205,7 @@ export default function NftCollection({ history }) {
                                                 <div key={key} className="d-flex justify-content-center">
                                                     <Image
                                                         className="d-block truck_image"
-                                                        src={activeSlide === value ? trucks[value] : BlackTruck}
+                                                        src={trucks[value]}
                                                         alt="First slide"
                                                         width="185px"
                                                         id={`truck_image_${value}`}
