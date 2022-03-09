@@ -54,21 +54,75 @@ export default function NewsFeed({ history }) {
         <>
             <Container>
                 <Row className="sectionRow newsFeedRow">
-                    <Col lg={12}>
+                    <Col lg={12} xs={12}>
                         <h1 className="sectionHeading newsFeedHeading">News Feed</h1>
                     </Col>
-                    <Col lg={6} className="newsFeedSliderContiner nfsc-lg">
-                        <h2> - - Slider Images  - - </h2>
+                    <Col lg={6} xs={12} className="newsFeedSliderContiner nfsc-lg">
+                        <Row>
+                            <Col lg={12}>
+                                <Swiper
+                                    effect={"cards"}
+                                    grabCursor={true}
+                                    modules={[EffectCards]}
+                                    className="mySwiper"
+                                    onSlideChange={() => slideChange()}
+                                    // onSwiper={(swiper) => console.log('----',swiper)}
+                                    ref={swiperRef}
+
+                                // navigation={{
+                                //     prevEl: prevRef.current ? prevRef.current : undefined,
+                                //     nextEl: nextRef.current ? nextRef.current : undefined,
+                                // }}
+                                // onInit={(swiper) => {
+                                //     swiper.params.navigation.prevEl = prevRef.current;
+                                //     swiper.params.navigation.nextEl = nextRef.current;
+                                //     swiper.navigation.update();
+                                // }}
+                                // modules={[Navigation]}
+                                >
+                                    {
+                                        mediumFeed && mediumFeed.map((value, key) => {
+                                            // console.log(value)
+                                            return (
+                                                <SwiperSlide key={key}>
+                                                    <input type="hidden" className="medium_id" value={value.link} />
+                                                    <Image className="swiper_image" loading="lazy" src={value.thumbnail} alt={value.title} fluid={true} />
+                                                </SwiperSlide>
+                                            )
+                                        })
+                                    }
+                                </Swiper>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col lg={12}>
+                                <div className="newsfeedBtnContainer" style={{ textAlign: "center" }}>
+                                    <button className="newsfeedBtn newsfeedPreviousBtn" onClick={() => swiperRef.current.swiper.slidePrev()}>
+                                        {/* <Image className="flipperImage" loading="lazy" src={FlipperLeft} alt="previous roadmap" fluid={true} /> */}
+                                        &#60;
+                                    </button>
+                                    <button className="newsfeedBtn newsfeedNextBtn" onClick={() => swiperRef.current.swiper.slideNext()}>
+                                        {/* <Image className="flipperImage" loading="lazy" src={FlipperRight} alt="previous roadmap" fluid={true} /> */}
+                                        &#62;
+                                    </button>
+                                </div>
+                                {/* <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{ span: 4, offset: 0 }}>
+                                    <div className="newsFeedPreviousButton" onClick={() => swiperRef.current.swiper.slidePrev()}>{'<'}</div>
+                                </Col>
+                                <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{ span: 4, offset: 0 }}>
+                                    <div className="newsFeedNextButton" onClick={() => swiperRef.current.swiper.slideNext()}>{'>'}</div>
+                                </Col> */}
+                            </Col>
+                        </Row>
                     </Col>
-                    <Col lg={6}>
+                    <Col lg={6} xs={12}>
                         <h2 className="sectionHeading newsFeedSubHeading">News Feed</h2>
-                        <p className="sectionText newsFeedText">Metal Roars is a Free-to-play and Play-to-earn blockchain-based action game consisting of stunts, racing and battle modes. In the games players can use NFT Trucks & equipment and go to war, race & stunts with other players in an ever-expanding gaming world where the possibilities are limitless.
-                            Metal Roars allow users to collect and make in-game purchases of exciting items such as trucks, weapons and upgrades. The game allows users to use their collectibles and head into battle with their opponents. Furthermore, our game has multiple modes that include Battle and Racing allowing users to earn rewards while playing the game.</p>
+                        <p className="sectionText newsFeedText">Metal Roars is a Free-to-play and Play-to-earn blockchain-based action game consisting of stunts, racing and battle modes. In the games players can use NFT Trucks & equipment and go to war, race & stunts with other players in an ever-expanding gaming world where the possibilities are limitless.</p>
                         <a href="/#" className="newsFeedLink">Read More</a>
 
                         <Row>
                             <Col lg="12" className="newsFeedSliderContiner nfsc-sm">
-                                <h2> - - Slider Images for mobile screen  - - </h2>
+                                {/* <h2> - - Slider Images for mobile screen  - - </h2> */}
                             </Col>
                         </Row>
                     </Col>
@@ -112,21 +166,11 @@ export default function NewsFeed({ history }) {
                                     return (
                                         <SwiperSlide key={key}>
                                             <input type="hidden" className="medium_id" value={value.link} />
-                                            <Image width="350px" height="300px" className="swiper_image" loading="lazy" src={value.thumbnail} alt={value.title} fluid={true} />
+                                            <Image className="swiper_image" loading="lazy" src={value.thumbnail} alt={value.title} fluid={true} />
                                         </SwiperSlide>
                                     )
                                 })
                             }
-                            <SwiperSlide>Slide 1</SwiperSlide>
-                            <SwiperSlide>Slide 2</SwiperSlide>
-                            <SwiperSlide>Slide 3</SwiperSlide>
-                            <SwiperSlide>Slide 4</SwiperSlide>
-                            <SwiperSlide>Slide 5</SwiperSlide>
-                            <SwiperSlide>Slide 6</SwiperSlide>
-                            <SwiperSlide>Slide 7</SwiperSlide>
-                            <SwiperSlide>Slide 8</SwiperSlide>
-                            <SwiperSlide>Slide 9</SwiperSlide>
-
 
                             <Row className="d-flex justify-content-center">
                                 <Col lg={{ span: 3, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{ span: 4, offset: 0 }}>

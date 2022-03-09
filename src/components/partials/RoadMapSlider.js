@@ -9,8 +9,8 @@ import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import FlipperRight from "../../assets/images/fliper_1.svg"
-import FlipperLeft from "../../assets/images/fliper_2.svg"
+// import FlipperRight from "../../assets/images/fliper_1.svg"
+// import FlipperLeft from "../../assets/images/fliper_2.svg"
 
 export default class RoadMapSlider extends Component {
   constructor(props) {

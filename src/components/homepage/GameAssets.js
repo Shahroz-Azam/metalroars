@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 
-const AsNavFor = React.lazy(() => import('../partials/AsNavFor'));
+// const AsNavFor = React.lazy(() => import('../partials/AsNavFor'));
 
 export default function GameAssets({ history }) {
 
@@ -17,7 +17,7 @@ export default function GameAssets({ history }) {
                     <Col lg={12} className="gameAssetsSlider">
                         <h2> - - Slider with background Section  - - </h2>
 
-                        <AsNavFor/>
+                        {/* <AsNavFor/> */}
 
                     </Col>
                 </Row>
