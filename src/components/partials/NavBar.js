@@ -57,9 +57,9 @@ export default function NavBar({ history }) {
 										<Col lg={4}></Col>
 										<Col lg={4}>
 											<Nav className="navbar-right">
-												<Nav.Link href="#tokonomic">Tokonomic</Nav.Link>
+												<Nav.Link href="#tokonomic">Tokenomics</Nav.Link>
 												<Nav.Link href="#team">Team</Nav.Link>
-												<Nav.Link href="#faqs">FAQS</Nav.Link>
+												<Nav.Link href="#faqs">Marketplace</Nav.Link>
 											</Nav>
 										</Col>
 									</Row>
