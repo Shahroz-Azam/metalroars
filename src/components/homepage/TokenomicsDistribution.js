@@ -1,7 +1,7 @@
 import React from "react";
 // import Carousel from 'react-bootstrap/Carousel';
-import Tokenomics1 from '../../assets/images/tokonomics-1.png'
-import Tokenomics2 from '../../assets/images/tokonomics-2.png'
+import Tokenomics1 from '../../assets/images/tokenomics/tokenomicsImg.png'
+import Tokenomics2 from '../../assets/images/tokenomics/tokenomicsImg2.png'
 import Image from 'react-bootstrap/Image'
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
