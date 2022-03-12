@@ -46,13 +46,13 @@ export default function Footer({ history }) {
                 </Row>
                 <Row className="footerBtns d-flex justify-content-center text-center">
                     <Col lg={4} xs={4} className="footerBtn">
-                       <a href="/#" className="footerLink text-center">WHITEPAPER</a>
+                       <a href="https://metal-roars.gitbook.io/metal-roars-whitepaper-v.1-1/" className="footerLink text-center">WHITEPAPER</a>
                     </Col>
                     <Col lg={4} xs={4} className="footerBtn">
                         <a href="/#" className="footerLink marketplaceButton text-center">Market Place</a>
                     </Col>
                     <Col lg={4} xs={4} className="footerBtn">
-                        <a href="/#" className="footerLink text-center">Pitch Deck</a>
+                        <a href="https://metal-roars.gitbook.io/metal-roars-whitepaper-v.1-1/" className="footerLink text-center">Pitch Deck</a>
                     </Col>
                 </Row>
                 <Row className="footerRow4 d-flex justify-content-center">
