@@ -1,6 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-// import Carousel from 'react-bootstrap/Carousel';
-// import GamePlay from '../../assets/images/game_play.png'
 import Image from 'react-bootstrap/Image'
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -9,12 +7,15 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCards } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-cards";
-// import 'swiper/css/navigation';
-// SwiperCore.use([Navigation]);
-//SwiperCore,Navigation
+
+// const NewsfeedAsNavFor = React.lazy(() => import('../partials/NFTAsNavFor'));
+
+
 export default function NewsFeed({ history }) {
 
     const [mediumFeed, setMediumFeeds] = useState([]);
+
+    console.log(mediumFeed);
     // const prevRef = useRef(null);
     // const nextRef = useRef(null);
     const swiperRef = useRef(null);
@@ -58,6 +59,9 @@ export default function NewsFeed({ history }) {
                         <h1 className="sectionHeading newsFeedHeading">News Feed</h1>
                     </Col>
                     <Col lg={6} xs={12} className="newsFeedSliderContiner nfsc-lg">
+
+                        {/* <NewsfeedAsNavFor /> */}
+
                         <Row>
                             <Col lg={12}>
                                 <Swiper

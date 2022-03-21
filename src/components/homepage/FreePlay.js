@@ -1,6 +1,6 @@
 import React from "react";
 // import Carousel from 'react-bootstrap/Carousel';
-import FreeToPlay from '../../assets/images/free_to_play.png'
+import FreeToPlay from '../../assets/images/freetoplay/Free-to-Play Play-to-Earn.webp'
 import Image from 'react-bootstrap/Image'
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";

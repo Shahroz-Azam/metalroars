@@ -24,7 +24,7 @@ export default function Faq() {
 
                                 </Accordion.Body>
                             </Accordion.Item>
-                            <Accordion.Item eventKey="1">
+                            {/* <Accordion.Item eventKey="1">
                                 <Accordion.Header>With so many new NFT games emerging, what do Metal Roars offer to attract new gamers into the space and hold on to veteran players?</Accordion.Header>
                                 <Accordion.Body>
                                     <p>You can not compare Metal roars with any other game. The way this game is designed, the graphics, the environment, everything is on a whole new level. Not only do we offer great graphics but also a Truck driving experience that you will never forget.
@@ -64,7 +64,7 @@ export default function Faq() {
                                     </p>
                                     <p>In addition to “play to earn”, Metal Roars offers other rewards in the form of coins that can be used to buy new trucks and parts for their truck. These rewards will keep the gamers coming back for more.</p>
                                 </Accordion.Body>
-                            </Accordion.Item>
+                            </Accordion.Item> */}
                             <Accordion.Item eventKey="4">
                                 <Accordion.Header>What are the next major priorities in your roadmap? </Accordion.Header>
                                 <Accordion.Body>

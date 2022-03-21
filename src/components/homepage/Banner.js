@@ -1,7 +1,7 @@
 import React from "react";
 // import Carousel from 'react-bootstrap/Carousel';
 import Poster from '../../assets/images/poster.jpg'
-import HeaderVideo from '../../assets/images/banner/metalroarsNFTvideo.mp4'
+import HeaderVideo from '../../assets/images/banner/Metal Roars main banner.mp4'
 // import Image from 'react-bootstrap/Image'
 export default function Banner({ history }) {
     return(

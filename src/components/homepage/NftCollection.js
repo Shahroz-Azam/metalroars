@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 
-const AsNavFor = React.lazy(() => import('../partials/AsNavFor'));
+const NFTAsNavFor = React.lazy(() => import('../partials/NFTAsNavFor'));
 
 
 export default function NftCollection({ history }) {
@@ -18,7 +18,7 @@ export default function NftCollection({ history }) {
                         <h1 className="sectionHeading nftCollectionHeading">NFT <span className="nftCollectionHeadingPart">Monster</span> Collection</h1>
                     </Col>
                     <Col lg={12}>
-                        <AsNavFor/>
+                        <NFTAsNavFor/>
                     </Col>
                 </Row>
             </Container>
