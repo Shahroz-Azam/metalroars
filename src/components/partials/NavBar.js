@@ -11,6 +11,7 @@ import WTelegram from '../../assets/images/nav/navSocial/telegramWhite.png'
 import WDiscord from '../../assets/images/nav/navSocial/discordWhite.png'
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Scroll from "react-scroll";
 
 export default function NavBar({ history }) {
 	return (
@@ -49,17 +50,17 @@ export default function NavBar({ history }) {
 									<Row>
 										<Col lg={4} >
 											<Nav className="navbar-left">
-												<Nav.Link href="#home">Home</Nav.Link>
-												<Nav.Link href="#gameplay">GamePlay</Nav.Link>
-												<Nav.Link href="#nft">NFT Trucks</Nav.Link>
+												<Scroll.Link to="home" spy={true} smooth={true} offset={-70} href="#home" className="nav-link">Home</Scroll.Link>
+												<Scroll.Link to="gameplay" spy={true} smooth={true} offset={-70}  href="#gameplay" className="nav-link">GamePlay</Scroll.Link>
+												<Scroll.Link to="nft" spy={true} smooth={true} offset={-70}  href="#nft" className="nav-link">NFT Trucks</Scroll.Link>
 											</Nav>
 										</Col>
 										<Col lg={4}></Col>
 										<Col lg={4}>
 											<Nav className="navbar-right">
-												<Nav.Link href="#tokonomic">Tokenomics</Nav.Link>
-												<Nav.Link href="#team">Team</Nav.Link>
-												<Nav.Link href="#marketplace">Marketplace</Nav.Link>
+												<Scroll.Link to="tokenomics" spy={true} smooth={true} offset={-70}  href="#tokenomics" className="nav-link">Tokenomics</Scroll.Link>
+												<Scroll.Link to="roadmap" spy={true} smooth={true} offset={-70}  href="#roadmap" className="nav-link">RoadMap</Scroll.Link>
+												<Scroll.Link to="marketplace" spy={true} smooth={true} offset={-70}  href="#marketplace" className="nav-link">Marketplace</Scroll.Link>
 											</Nav>
 										</Col>
 									</Row>

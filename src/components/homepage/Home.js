@@ -33,22 +33,22 @@ export default function HomePage({ history }) {
     return(
         <>
             <Suspense fallback={<Spinner />}>
-                <Container fluid className="headerContainer">
+                <Container fluid  className="headerContainer">
                     <Header />
                 </Container>
-                <Container fluid className="bannerContainer padding-zero">
+                <Container fluid id="home" className="bannerContainer padding-zero">
                     <Banner />
                 </Container>
-                <Container fluid className="gamePlayContainer">
+                <Container fluid id="gameplay" className="gamePlayContainer">
                     <GamePlay/>
                 </Container>
                 <Container fluid className="freeToPlayContainer">
                     <FreePlay/>
                 </Container>
-                <Container fluid className="roadMapContainer">
+                <Container fluid id="roadmap" className="roadMapContainer">
                     <RoadMap/>
                 </Container>
-                <Container fluid className="nftCollectionContainer">
+                <Container fluid id="nft" className="nftCollectionContainer">
                     <NftCollection />
                 </Container>
                 <Container fluid className="gameAssetsContainer">
@@ -57,7 +57,7 @@ export default function HomePage({ history }) {
                 <Container fluid className="newsFeedContainer">
                     <NewsFeed />
                 </Container>
-                <Container fluid className="tokenomicsContainer">
+                <Container fluid id="tokenomics" className="tokenomicsContainer">
                     <TokenomicsDistribution />
                 </Container>
                 <Container fluid className="mrTeamContainer">
