@@ -69,7 +69,10 @@ export default function HomePage({ history }) {
                 <Container fluid className="faqContainer">
                     <Faq />
                 </Container>
-                <Footer/>
+                <Container fluid className="footerContainer">
+                    <Footer/>
+                </Container>
+
             </Suspense>
 
         </>
