@@ -124,7 +124,7 @@ export default class NFTAsNavFor extends Component {
             >
               <div key={1}>
                 <video className="truckVideo" src={Model1} controls={false} autoPlay={true} playsInline={false} preload="none" loop={true} muted={true} />
-              </div>
+                             </div>
               <div key={2}>
                 <video className="truckVideo" src={Model2} controls={false} autoPlay={true} playsInline={false} preload="none" loop={true} muted={true} />
               </div>
