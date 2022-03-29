@@ -116,7 +116,9 @@ a:hover {
     border-bottom: 2px solid transparent;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:active, .navbar-dark .navbar-nav .nav-link:focus {
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:active,
+.navbar-dark .navbar-nav .nav-link:focus {
     color: #fff;
     border-bottom: 2px solid #ff4600;
 }
@@ -156,6 +158,7 @@ a:hover {
 }
 
 @media screen and (max-width: 992px) {
+
     .upperNav,
     .nav-line {
         display: none;
@@ -181,8 +184,47 @@ a:hover {
     }
 }
 
+/*banner css*/
+.bannerContainer {
+    position: relative;
+}
+
 .bannerContainer .bannerVideo {
     width: 100%;
+}
+
+.bannerContainer .bannerButtons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bannerBtn{
+    color: #ffffff;
+    padding: 5px 12px;
+    border: 2px solid #ff4600;
+    background-color: #ff4600;
+    border-radius: 50px;
+    margin: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    box-shadow: #1d1d1d 2px 2px 6px;
+    transition: color ease 0.3s, background-color ease 0.3s;
+}
+
+.bannerBtn:hover{
+    background-color: #fff;
+    color: #ff4600;
+    border: 2px solid #fff;
+    box-shadow: #ff440085 2px 2px 2px;
+}
+
+.whitepaperBtn{
+    background-color: transparent;
+    color: #ff4600;
+    border: 2px solid #ff4600;
+    box-shadow: #ff440085 2px 2px 2px;
 }
 
 /*slider css*/
@@ -323,7 +365,7 @@ a:hover {
     color: #FF4600;
 }
 
-.hrContainer{
+.hrContainer {
     position: relative;
 }
 
@@ -337,7 +379,7 @@ a:hover {
     top: -0.75em;
 }
 
-.roadMap_ul{
+.roadMap_ul {
     overflow: hidden;
 }
 
@@ -350,15 +392,15 @@ a:hover {
     color: #FF4600;
 }
 
-.mblRoadmapBtnContainer{
+.mblRoadmapBtnContainer {
     display: none;
 }
 
-.dsktpRoadmapBtnContainer{
+.dsktpRoadmapBtnContainer {
     margin-bottom: 1em;
 }
 
-.roadmapBtn{
+.roadmapBtn {
     color: #fff;
     background-color: transparent;
     padding: 5px 16px;
@@ -369,7 +411,7 @@ a:hover {
     transition: color ease 0.2s, border ease 0.4s;
 }
 
-.roadmapBtn:hover{
+.roadmapBtn:hover {
     color: #ff4600;
     border: 2px solid #ff4600;
 
@@ -380,19 +422,19 @@ a:hover {
         margin-right: 20px;
     } */
 
-    .roadMapImg{
+    .roadMapImg {
         width: 100%;
     }
 
     .roadMapImgContainer {
         margin: 30px 0;
     }
-    
-    .mblRoadmapBtnContainer{
-        display:unset;
+
+    .mblRoadmapBtnContainer {
+        display: unset;
     }
 
-    .dsktpRoadmapBtnContainer{
+    .dsktpRoadmapBtnContainer {
         display: none;
     }
 }
@@ -403,57 +445,57 @@ a:hover {
 .nftCollectionRow {
     text-align: center;
     margin: 0 0 60px;
-  }
-  
-  .nftCollectionHeadingPart {
+}
+
+.nftCollectionHeadingPart {
     color: #ffffff;
-  }
-  
-  .nftCollectionText {
+}
+
+.nftCollectionText {
     margin: 60px 0;
-  }
-  
-  .sliderButton{
+}
+
+.sliderButton {
     background-color: transparent;
     outline: none;
     border: none;
     width: 100%;
     display: inline-block;
-  }
-  
-  /*nft monster collection css*/
-  
-  .bigSliderSection{
+}
+
+/*nft monster collection css*/
+
+.bigSliderSection {
     align-items: center;
     margin-top: 40px;
-  }
-  
-  .truckContainer{
+}
+
+.truckContainer {
     text-align: center;
-  }
-  
-  .truckImage{
+}
+
+.truckImage {
     max-width: 160px;
     display: inline-block !important;
     margin: auto 0;
-  }
-  
-  .nftCollection_hr {
+}
+
+.nftCollection_hr {
     border: 1px solid #FF4600;
     height: 2px;
     background-color: #fff;
     color: #fff;
     opacity: 1;
-  }
-  
-  .truckVideo {
+}
+
+.truckVideo {
     width: 70%;
-  }
-  
-  .slick-prev:before,
-  .slick-next:before {
-      display: none;
-  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+    display: none;
+}
 
 .nftCollectionTextContainer {
     font-family: Square721-BT-Roman !important;
@@ -464,18 +506,18 @@ a:hover {
 
 
 @media screen and (max-width: 992px) {
-    .truckImage{
+    .truckImage {
         max-width: 80px;
     }
 
-    .sliderButton{
+    .sliderButton {
         display: none;
-      }
+    }
 
-       
-  .truckVideo {
-    width: 90%;
-  }
+
+    .truckVideo {
+        width: 90%;
+    }
 }
 
 /*gameAssets section css*/
@@ -491,7 +533,7 @@ a:hover {
     margin: 0 0 80px 0;
 }
 
-.gameAssetsImg{
+.gameAssetsImg {
     width: 100%;
 }
 
@@ -548,11 +590,11 @@ a:hover {
 }
 
 
-.newsfeedBtnContainer{
+.newsfeedBtnContainer {
     margin: 1em 0;
 }
 
-.newsfeedBtn{
+.newsfeedBtn {
     color: #fff;
     background-color: transparent;
     padding: 5px 16px;
@@ -563,7 +605,7 @@ a:hover {
     transition: color ease 0.2s, border ease 0.4s;
 }
 
-.newsfeedBtn:hover{
+.newsfeedBtn:hover {
     color: #1d1d1d;
     border: 2px solid #1d1d1d;
 
@@ -592,19 +634,19 @@ a:hover {
 }
 
 @media screen and (max-width: 992px) {
-    .newsfeedImg{
+    .newsfeedImg {
         width: 100%;
     }
 
     .newsfeedImgContainer {
         margin: 30px 0;
     }
-    
-    .mblNewsfeedBtnContainer{
-        display:unset;
+
+    .mblNewsfeedBtnContainer {
+        display: unset;
     }
 
-    .dsktpNewsfeedBtnContainer{
+    .dsktpNewsfeedBtnContainer {
         display: none;
     }
 
@@ -620,7 +662,7 @@ a:hover {
     display: none;
 }
 
-.tokenomicsImg2{
+.tokenomicsImg2 {
     width: 100%;
 }
 
@@ -840,7 +882,7 @@ a:hover {
 }
 
 /*footer section css*/
-.footer .footerContainer{
+.footer .footerContainer {
     background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url("../assets/images/footer/footerBG.webp");
     background-repeat: no-repeat;
     background-size: cover;
@@ -903,7 +945,7 @@ a:hover {
     }
 }
 
-.footerRow4{
+.footerRow4 {
     text-align: center;
     font-family: Square721-BT-Roman;
     font-size: 16px;

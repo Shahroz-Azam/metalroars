@@ -13,6 +13,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Scroll from "react-scroll";
 
+// import {Link} from 'react-router-dom';
+
 export default function NavBar({ history }) {
 	return (
 		<>
