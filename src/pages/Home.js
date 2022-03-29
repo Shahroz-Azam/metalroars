@@ -13,42 +13,42 @@ import Container from 'react-bootstrap/Container'
 // import NftCollection from "./NftCollection";
 // import NewsFeed from "./NewsFeed";
 // import TokonomicsDistribution from "./TokonomicsDistribution";
-import Spinner from "../spinner/spinner";
-const Header = React.lazy(() => import('../partials/Header'));
-const Footer = React.lazy(() => import('../partials/Footer'));
-const Banner = React.lazy(() => import('./Banner'));
-const GamePlay = React.lazy(() => import('./GamePlay'));
-const FreePlay = React.lazy(() => import('./FreePlay'));
-const RoadMap = React.lazy(() => import('./RoadMap'));
-const OurTeam = React.lazy(() => import('./OurTeam'));
+import Spinner from "../components/spinner/spinner";
+// const Header = React.lazy(() => import('../components/partials/Header'));
+// const Footer = React.lazy(() => import('../components/partials/Footer'));
+const Banner = React.lazy(() => import('../components/homepage/Banner'));
+const GamePlay = React.lazy(() => import('../components/homepage/GamePlay'));
+const FreePlay = React.lazy(() => import('../components/homepage/FreePlay'));
+const RoadMap = React.lazy(() => import('../components/homepage/RoadMap'));
+const OurTeam = React.lazy(() => import('../components/homepage/OurTeam'));
 // const Advisors = React.lazy(() => import('./Advisors'));
-const NftCollection = React.lazy(() => import('./NftCollection'));
-const GameAssets = React.lazy(() => import('./GameAssets'));
-const NewsFeed = React.lazy(() => import('./NewsFeed'));
-const TokenomicsDistribution = React.lazy(() => import('./TokenomicsDistribution'));
-const Technology = React.lazy(() => import('./Technology'));
-const Faq = React.lazy(() => import('./Faq'));
+const NftCollection = React.lazy(() => import('../components/homepage/NftCollection'));
+const GameAssets = React.lazy(() => import('../components/homepage/GameAssets'));
+const NewsFeed = React.lazy(() => import('../components/homepage/NewsFeed'));
+const TokenomicsDistribution = React.lazy(() => import('../components/homepage/TokenomicsDistribution'));
+const Technology = React.lazy(() => import('../components/homepage/Technology'));
+const Faq = React.lazy(() => import('../components/homepage/Faq'));
 
 export default function HomePage({ history }) {
     return(
         <>
             <Suspense fallback={<Spinner />}>
-                <Container fluid className="headerContainer">
+                {/* <Container fluid  className="headerContainer">
                     <Header />
-                </Container>
-                <Container fluid className="bannerContainer padding-zero">
+                </Container> */}
+                <Container fluid id="home" className="bannerContainer padding-zero">
                     <Banner />
                 </Container>
-                <Container fluid className="gamePlayContainer">
+                <Container fluid id="gameplay" className="gamePlayContainer">
                     <GamePlay/>
                 </Container>
                 <Container fluid className="freeToPlayContainer">
                     <FreePlay/>
                 </Container>
-                <Container fluid className="roadMapContainer">
+                <Container fluid id="roadmap" className="roadMapContainer">
                     <RoadMap/>
                 </Container>
-                <Container fluid className="nftCollectionContainer">
+                <Container fluid id="nft" className="nftCollectionContainer">
                     <NftCollection />
                 </Container>
                 <Container fluid className="gameAssetsContainer">
@@ -57,7 +57,7 @@ export default function HomePage({ history }) {
                 <Container fluid className="newsFeedContainer">
                     <NewsFeed />
                 </Container>
-                <Container fluid className="tokenomicsContainer">
+                <Container fluid id="tokenomics" className="tokenomicsContainer">
                     <TokenomicsDistribution />
                 </Container>
                 <Container fluid className="mrTeamContainer">
@@ -69,7 +69,10 @@ export default function HomePage({ history }) {
                 <Container fluid className="faqContainer">
                     <Faq />
                 </Container>
-                <Footer/>
+                {/* <Container fluid className="footerContainer">
+                    <Footer/>
+                </Container> */}
+
             </Suspense>
 
         </>

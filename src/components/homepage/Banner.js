@@ -18,6 +18,11 @@ export default function Banner({ history }) {
                     muted={true}
                     poster={Poster}
                 />
+
+                <div className="bannerButtons">
+                    <button className="bannerBtn trailerBtn" onClick={()=> window.open("https://www.youtube.com/watch?v=UobNaF93bNc", "_blank")}>Game Trailer</button>
+                    <button className="bannerBtn whitepaperBtn" onClick={()=> window.open("https://metal-roars.gitbook.io/metal-roars-whitepaper-v.1-1/", "_blank")}>WhitePaper</button>
+                </div>
             </div>
         </>
         )

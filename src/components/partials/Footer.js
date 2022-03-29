@@ -52,7 +52,7 @@ export default function Footer({ history }) {
                         <a href="/#" className="footerLink marketplaceButton text-center">Market Place</a>
                     </Col>
                     <Col xl={2} lg={3} xs={4} className="footerBtn">
-                        <a href="https://metal-roars.gitbook.io/metal-roars-whitepaper-v.1-1/" className="footerLink text-center">Pitch Deck</a>
+                        <a href="https://drive.google.com/file/d/1zAJJ5V9jcmE1bO8azyP8Dqv3mqKsPn83/view?usp=sharing" className="footerLink text-center">Pitch Deck</a>
                     </Col>
                 </Row>
                 <Row className="footerRow4 d-flex justify-content-center">

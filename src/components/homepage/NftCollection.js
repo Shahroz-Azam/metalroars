@@ -15,7 +15,7 @@ export default function NftCollection({ history }) {
             <Container>
                 <Row className="sectionRow nftCollectionRow">
                     <Col lg={12}>
-                        <h1 className="sectionHeading nftCollectionHeading">NFT <span className="nftCollectionHeadingPart">Monster</span> Collection</h1>
+                        <h1 className="sectionHeading nftCollectionHeading">NFT <span className="nftCollectionHeadingPart">TRUCK</span> COLLECTION</h1>
                     </Col>
                     <Col lg={12}>
                         <NFTAsNavFor/>
