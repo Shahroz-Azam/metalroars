@@ -134,9 +134,19 @@ export default function OurTeam({ history }) {
                     <Col lg={4} md={4} xs={6} className="memberContainer ">
                         <Row className="moreMemberContainer">
                             <Col lg={12}>
-                                <p className="moreMemberNumber">+5</p>
-                                <p className="moreMemberText">Other Monster Roars <br /> Smart Team Member</p>
+
                             </Col>
+                            
+                        </Row>
+                    </Col>
+
+                    <Col lg={4} md={4} xs={6} className="memberContainer ">
+                        <Row className="moreMemberContainer">
+                            <Col lg={12}>
+                                <p className="moreMemberNumber">+5</p>
+                                <p className="moreMemberText">Other Metal Roars <br /> Smart Team Member</p>
+                            </Col>
+                            
                         </Row>
                     </Col>
                 </Row>

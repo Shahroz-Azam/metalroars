@@ -1,4 +1,5 @@
 import React from 'react';
+import { MDBFooter } from 'mdb-react-ui-kit';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
@@ -18,57 +19,116 @@ export default function Footer({ history }) {
         <footer className="footer">
             <Container fluid className="footerContainer">
                 <Row className="footerRow d-flex justify-content-center">
-                    <Col className="footerLogo-col text-center" lg={{ span: 4, offset: 0 }} md={{ span: 4, offset: 0 }} xs={{span: 12, offset: 0}}>
-                        <Image className="footerLogo" src={Logo} alt="metal roar logo" />
-                    </Col>
-                </Row>
-                <Row className="footerRow2 d-flex justify-content-center">
-                    <Col lg={2} xs={2}>
-                        <a target="_blank" rel="noreferrer" href="https://medium.com/@metalroars"><Image className="footerSocialImage" src={OMedium} alt="medium logo" /></a>
-                        {/*<h4 className="footer-social-link">@metalroars</h4>*/}
-                    </Col>
-                    <Col lg={2} xs={2}>
-                        <a target="_blank" rel="noreferrer" href="https://t.me/metalroars"><Image className="footerSocialImage" src={OTelegram} alt="tele logo" /></a>
-                        {/*<h4 className="footer-social-link">@metalroars</h4>*/}
-                    </Col>
-                    <Col lg={2} xs={2}>
-                        <a target="_blank" rel="noreferrer" href="https://twitter.com/Metal_Roars"><Image className="footerSocialImage" src={OTwitter} alt="twitter logo" /></a>
-                        {/*<h4 className="footer-social-link">@metalroars</h4>*/}
-                    </Col>
-                    <Col lg={2} xs={2}>
-                        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCNHnVkj0RBT32MG7W6Op_9Q"><Image className="footerSocialImage" src={OYoutube} alt="instagram logo" /></a>
-                        {/*<h4 className="footer-social-link">@metalroars</h4>*/}
-                    </Col>
-                    <Col lg={2} xs={2}>
-                        <a target="_blank" rel="noreferrer" href="/#"><Image className="footerSocialImage" src={ODiscord} alt="linkdin logo" /></a>
-                        {/*<h4 className="footer-social-link">@metalroars</h4>*/}
-                    </Col>
-                </Row>
-                <Row className="footerBtns d-flex justify-content-center">
-                    <Col xl={2} lg={3} xs={4} className="footerBtn">
-                       <a href="https://metal-roars.gitbook.io/metal-roars-whitepaper-v.1-1/" className="footerLink text-center">WHITEPAPER</a>
-                    </Col>
-                    <Col xl={2} lg={3} xs={4} className="footerBtn">
-                        <a href="/#" className="footerLink marketplaceButton text-center">Market Place</a>
-                    </Col>
-                    <Col xl={2} lg={3} xs={4} className="footerBtn">
-                        <a href="https://drive.google.com/file/d/1zAJJ5V9jcmE1bO8azyP8Dqv3mqKsPn83/view?usp=sharing" className="footerLink text-center">Pitch Deck</a>
-                    </Col>
-                </Row>
-                <Row className="footerRow4 d-flex justify-content-center">
-                    <Col lg={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }} xs={{span: 12, offset: 0}}>
-                        <a href="#top" onClick={scrollToTop}>
-                            <Image className="footerSocialImage" src={scroll} alt="scroll logo" />
-                            <h4 className="footerScrollText">Scroll To Top</h4>
-                        </a>
-                    </Col>
+                <MDBFooter bgColor='none'  className='text-center text-lg-start text-white'>
+      <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
+        <div className='me-5 d-none d-lg-block'>
+          <span>Get connected with us on social networks:</span>
+        </div>
+
+        <div>
+          <a href='https://twitter.com/Metal_Roars' className='me-4 text-reset'>
+            <i className='fab fa-twitter'></i>
+          </a>
+          <a href='' className='me-4 text-reset'>
+            <i className='fab fa-instagram'></i>
+          </a>
+          <a href='https://www.youtube.com/channel/UCNHnVkj0RBT32MG7W6Op_9Q' className='me-4 text-reset'>
+            <i className='fab fa-youtube'></i>
+          </a>
+          <a href='https://t.me/metalroars' className='me-4 text-reset'>
+            <i className='fab fa-telegram'></i>
+          </a>
+
+        </div>
+      </section>
+
+      <section className=''>
+        <div className='container text-center text-md-start mt-5'>
+          <div className='row mt-3'>
+            <div className='col-md-3 col-lg-4 col-xl-3 mx-auto mb-4'>
+              <h1 className='text-uppercase fw-bold mb-4'>
+             < Image className="sectionImage roadMapImg" src={Logo} alt="game play image" />
+             
+              
+              </h1>
+              <p>
+              </p>
+            </div>
+
+            <div className='col-md-2 col-lg-2 col-xl-2 mx-auto mb-4'>
+              <h6 className='text-uppercase fw-bold mb-4'>MAJOR LINK</h6>
+              <p>
+                <a href='#!' className='text-reset'>
+                  WHITEPAPER
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  INVESTMENTS DECK
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  NFT GRAPHICS
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  MARKETPLACE
+                </a>
+              </p>
+            </div>
+
+            <div className='col-md-3 col-lg-2 col-xl-2 mx-auto mb-4'>
+              <h6 className='text-uppercase fw-bold mb-4'>MENU</h6>
+              <p>
+                <a href='#!' className='text-reset'>
+                  HOME
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  MARKETPLACE
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  STAKING
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  VESTING
+                </a>
+              </p>
+            </div>
+
+            <div className='col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4'>
+              <h6 className='text-uppercase fw-bold mb-4'>Contact us</h6>
+              <p>
+                <i className='fas fa-home me-3'></i> Address: M9B 4L5 CA
+              </p>
+              <p>
+                <i className='fas fa-envelope me-3'></i>
+                contact@metalroars.com
+              </p>
+              
+             
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.10)' }}>
+        © 2022 Copyright:
+        <a className='text-reset fw-bold' href='https://metalroars.com/'>
+           metalroars
+        </a>
+      </div>
+    </MDBFooter>
                 </Row>
 
             </Container>
-            <Container className="footerRow4 d-flex justify-content-center">
-                <p>Address: M9B 4L5 CA</p>
-            </Container>
-
         </footer>
     )
 }

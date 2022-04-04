@@ -2,6 +2,7 @@ import React from 'react';
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+
 import Image from 'react-bootstrap/Image'
 import Logo from '../../assets/images/nav/header-logo.png'
 import WMedium from '../../assets/images/nav/navSocial/medium.png'
@@ -39,9 +40,12 @@ export default function NavBar({ history }) {
 										<Col lg={4} className="imageContainer">
 											<Image className="nav-logo" loading="lazy" src={Logo} width="200px" alt="metal roar logo" fluid={true} />
 										</Col>
-										<Col lg={4}></Col>
+										<Col lg={4}>
+											
+										</Col>
 									</Row>
 								</Container>
+								
 							</Col>
 						</Row>
 						<Row className="nav-line">
@@ -52,17 +56,17 @@ export default function NavBar({ history }) {
 									<Row>
 										<Col lg={4} >
 											<Nav className="navbar-left">
-												<Scroll.Link to="home" spy={true} smooth={true} offset={-70} href="#home" className="nav-link">Home</Scroll.Link>
-												<Scroll.Link to="gameplay" spy={true} smooth={true} offset={-70}  href="#gameplay" className="nav-link">GamePlay</Scroll.Link>
-												<Scroll.Link to="nft" spy={true} smooth={true} offset={-70}  href="#nft" className="nav-link">NFT Trucks</Scroll.Link>
+												<Scroll.Link to="home" spy={true} smooth={false} offset={-70} href="#home" className="nav-link">Home</Scroll.Link>
+												<Scroll.Link to="gameplay" spy={true} smooth={false} offset={-70}  href="#gameplay" className="nav-link">GamePlay</Scroll.Link>
+												<Scroll.Link to="nft" spy={true} smooth={false} offset={-70}  href="#nft" className="nav-link">NFT Trucks</Scroll.Link>
 											</Nav>
 										</Col>
 										<Col lg={4}></Col>
 										<Col lg={4}>
 											<Nav className="navbar-right">
-												<Scroll.Link to="tokenomics" spy={true} smooth={true} offset={-70}  href="#tokenomics" className="nav-link">Tokenomics</Scroll.Link>
-												<Scroll.Link to="roadmap" spy={true} smooth={true} offset={-70}  href="#roadmap" className="nav-link">RoadMap</Scroll.Link>
-												<Scroll.Link to="marketplace" spy={true} smooth={true} offset={-70}  href="#marketplace" className="nav-link">Marketplace</Scroll.Link>
+												<Scroll.Link to="tokenomics" spy={true} smooth={false} offset={-70}  href="#tokenomics" className="nav-link">Tokenomics</Scroll.Link>
+												<Scroll.Link to="roadmap" spy={true} smooth={false} offset={-70}  href="#roadmap" className="nav-link">RoadMap</Scroll.Link>
+												<Scroll.Link to="marketplace" spy={true} smooth={false} offset={-70}  href="#marketplace" className="nav-link">Marketplace</Scroll.Link>
 											</Nav>
 										</Col>
 									</Row>

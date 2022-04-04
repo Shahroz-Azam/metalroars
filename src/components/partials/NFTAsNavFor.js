@@ -124,21 +124,27 @@ export default class NFTAsNavFor extends Component {
             >
               <div key={1}>
                 <video className="truckVideo" src={Model1} controls={false} autoPlay={true} playsInline={false} preload="none" loop={true} muted={true} />
+                <h1 className="sectionHeading gamePlayHeading">Monster Truck </h1>
                              </div>
               <div key={2}>
                 <video className="truckVideo" src={Model2} controls={false} autoPlay={true} playsInline={false} preload="none" loop={true} muted={true} />
+                <h1 className="sectionHeading gamePlayHeading">Angry Bull </h1>
               </div>
               <div key={3}>
                 <video className="truckVideo" src={Model3} controls={false} autoPlay={true} playsInline={false} preload="none" loop={true} muted={true} />
+                <h1 className="sectionHeading gamePlayHeading">THE SKULL </h1>
               </div>
               <div key={4}>
                 <video className="truckVideo" src={Model1} controls={false} autoPlay={true} playsInline={false} preload="none" loop={true} muted={true} />
+                <h1 className="sectionHeading gamePlayHeading">Monster Truck </h1>
               </div>
               <div key={5}>
                 <video className="truckVideo" src={Model2} controls={false} autoPlay={true} playsInline={false} preload="none" loop={true} muted={true} />
+                <h1 className="sectionHeading gamePlayHeading">Angry Bull </h1>
               </div>
               <div key={6}>
                 <video className="truckVideo" src={Model3} controls={false} autoPlay={true} playsInline={false} preload="none" loop={true} muted={true} />
+                <h1 className="sectionHeading gamePlayHeading">THE SKULL </h1>
               </div>
             </Slider>
           </Col>

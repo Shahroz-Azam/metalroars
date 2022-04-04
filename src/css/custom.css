@@ -185,6 +185,7 @@ a:hover {
 }
 
 /*banner css*/
+
 .bannerContainer {
     position: relative;
 }
@@ -284,6 +285,24 @@ a:hover {
 }
 
 /*game play section css*/
+#gameplay 
+.swiper-slide swiper-slide-active
+{ height: 100% }
+
+.swiper-button-next{
+
+    color: #ff4600;
+}
+
+.swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal{
+
+    color: #ff4600;
+}
+
+.swiper-pagination-progressbar-fill{
+
+    color: #ff4600;
+}
 .gamePlayContainer {
     background-image: linear-gradient(#02060b, #02060b, #000);
 }
@@ -294,8 +313,7 @@ a:hover {
 
 /*free to play section css*/
 .freeToPlayContainer {
-    background-color: #FF4600;
-    color: #ffffff;
+    background-color: #ff4600;    
     padding: 60px 0;
 }
 
@@ -334,7 +352,10 @@ a:hover {
 
 /*roadMap section css*/
 .roadMapContainer {
-    background-color: #1d1d1d;
+    background-image: url("../assets/images/roadmap/rm1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .roadMapHeading {
@@ -545,7 +566,7 @@ a:hover {
 
 /*news feed section css*/
 .newsFeedContainer {
-    background-color: #ff4600;
+    background-color: #ff4600; 
 }
 
 .newsFeedRow {
@@ -658,6 +679,18 @@ a:hover {
 
 
 /*tokenomics section css*/
+.tokenomicsContainer  {
+    background-image: url("../assets/images/tokenomics/tk.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.tokenomicsHeading{
+    text-align: center
+}
 .tokenomicsImg-sm {
     display: none;
 }
@@ -881,12 +914,12 @@ a:hover {
     }
 }
 
+
 /*footer section css*/
 .footer .footerContainer {
-    background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url("../assets/images/footer/footerBG.webp");
-    background-repeat: no-repeat;
+    background-color: #ff4600;    background-repeat: no-repeat;
     background-size: cover;
-    padding: 3rem 0 2rem;
+
     background-position: center;
     text-align: center;
 }
